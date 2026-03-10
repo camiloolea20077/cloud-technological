@@ -2,61 +2,54 @@
      WHATSAPP FLOATING BUTTON
      ============================================================ -->
 <a href="https://wa.me/573204116945?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20y%20el%20sistema%20Aura%20POS."
-   target="_blank"
-   rel="noopener noreferrer"
+   target="_blank" rel="noopener noreferrer"
    class="fixed bottom-6 right-6 z-50 flex items-center gap-3 group"
    title="Chatea con nosotros por WhatsApp">
 
-  <!-- Tooltip -->
   <span class="opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-2 group-hover:translate-x-0
-               bg-[#0a1628] border border-[rgba(46,108,246,0.2)] text-white text-xs font-semibold
-               px-3 py-2 rounded-lg whitespace-nowrap shadow-xl pointer-events-none">
+               bg-white border border-gray-200 text-gray-700 text-xs font-semibold
+               px-3 py-2 rounded-lg whitespace-nowrap shadow-lg pointer-events-none">
     ¡Escríbenos ahora!
   </span>
 
-  <!-- Button -->
-  <div class="relative w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300
-              group-hover:scale-110 group-hover:shadow-green-500/40"
+  <div class="relative w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300
+              group-hover:scale-110"
        style="background: linear-gradient(135deg, #25d366, #128c7e);
               box-shadow: 0 8px 30px rgba(37,211,102,0.45)">
-    <!-- Ping ring -->
-    <span class="absolute inset-0 rounded-full animate-ping opacity-30"
+    <span class="absolute inset-0 rounded-full animate-ping opacity-25"
           style="background: #25d366"></span>
-    <!-- WhatsApp icon -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-7 h-7 relative z-10">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
   </div>
 </a>
 
+
 <!-- ============================================================
      NAVBAR
      ============================================================ -->
 <nav
   id="navbar"
-  class="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-3.5"
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-3.5 bg-white/80 backdrop-blur-md"
   [class.nav-scrolled]="isScrolled"
 >
   <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <!-- Logo -->
-    <a href="#" class="flex items-center gap-2.5 group">
+    <a href="#" class="flex items-center gap-2.5">
       <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: var(--aura-gradient)">
         <i class="pi pi-cloud text-white text-sm"></i>
       </div>
-      <span class="font-bold text-white text-[0.95rem] tracking-tight">
-        Cloud <span style="color: var(--aura-blue-light)">Tecnological</span>
+      <span class="font-bold text-[#0f172a] text-[0.95rem] tracking-tight">
+        Cloud <span class="gradient-text">Tecnological</span>
       </span>
     </a>
 
-    <!-- Links -->
     <ul class="hidden md:flex items-center gap-8">
-      <li><a href="#servicios"    class="nav-link">Servicios</a></li>
-      <li><a href="#aura-pos"     class="nav-link">Aura POS</a></li>
-      <li><a href="#portafolio"   class="nav-link">Portafolio</a></li>
-      <li><a href="#nosotros"     class="nav-link">Nosotros</a></li>
+      <li><a href="#servicios"  class="nav-link">Servicios</a></li>
+      <li><a href="#aura-pos"   class="nav-link">Aura POS</a></li>
+      <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+      <li><a href="#nosotros"   class="nav-link">Nosotros</a></li>
     </ul>
 
-    <!-- CTA -->
     <a href="#contacto" class="btn-aura text-sm hidden md:inline-flex">
       Solicitar demo <i class="pi pi-arrow-right text-xs"></i>
     </a>
@@ -67,34 +60,32 @@
 <!-- ============================================================
      HERO
      ============================================================ -->
-<section class="relative min-h-screen bg-[#030810] text-white flex items-center overflow-hidden grid-bg">
-  <!-- Decorative orbs -->
+<section class="relative min-h-screen bg-white text-[#0f172a] flex items-center overflow-hidden grid-bg">
+  <!-- Orbs suaves sobre blanco -->
   <div class="orb w-[700px] h-[700px] top-[-200px] right-[-150px]"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.14) 0%, transparent 65%)"></div>
+       style="background: radial-gradient(circle, rgba(46,108,246,0.1) 0%, transparent 65%)"></div>
   <div class="orb w-[500px] h-[500px] bottom-[-100px] left-[-100px]"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.12) 0%, transparent 65%)"></div>
-  <div class="orb w-[300px] h-[300px] top-1/2 left-1/3"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.06) 0%, transparent 65%)"></div>
+       style="background: radial-gradient(circle, rgba(123,77,255,0.08) 0%, transparent 65%)"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-24 pb-16">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-28 pb-16">
     <div class="grid lg:grid-cols-2 gap-14 items-center">
 
-      <!-- Left: copy -->
+      <!-- Left -->
       <div class="space-y-7">
         <div class="section-tag">
           <span class="pulse-dot"></span>
           Soluciones digitales para empresas
         </div>
 
-        <h1 class="text-[2.8rem] md:text-[3.6rem] font-black leading-[1.05] tracking-tight">
+        <h1 class="text-[2.8rem] md:text-[3.8rem] font-black leading-[1.05] tracking-tight text-[#0f172a]">
           Software que<br />
           <span class="gradient-text">transforma</span><br />
           tu empresa
         </h1>
 
-        <p class="text-gray-400 text-lg leading-relaxed max-w-lg">
-          Desarrollamos a la medida, ofrecemos <strong class="text-white font-semibold">Aura POS</strong> para tu punto de venta,
-          sistemas <strong class="text-white font-semibold">ERP</strong> y soluciones cloud que escalan con tu negocio.
+        <p class="text-[#475569] text-lg leading-relaxed max-w-lg">
+          Desarrollamos a la medida, ofrecemos <strong class="text-[#0f172a] font-semibold">Aura POS</strong> para tu punto de venta,
+          sistemas <strong class="text-[#0f172a] font-semibold">ERP</strong> y soluciones cloud que escalan con tu negocio.
         </p>
 
         <div class="flex flex-wrap gap-3 pt-1">
@@ -110,27 +101,26 @@
         <div class="flex flex-wrap gap-4 pt-2">
           <div class="stat-pill">
             <span class="text-2xl font-black gradient-text">50+</span>
-            <span class="text-xs text-gray-400 mt-0.5">Proyectos</span>
+            <span class="text-xs text-[#94a3b8] mt-0.5">Proyectos</span>
           </div>
           <div class="stat-pill">
             <span class="text-2xl font-black gradient-text">5+</span>
-            <span class="text-xs text-gray-400 mt-0.5">Años</span>
+            <span class="text-xs text-[#94a3b8] mt-0.5">Años</span>
           </div>
           <div class="stat-pill">
             <span class="text-2xl font-black gradient-text">100%</span>
-            <span class="text-xs text-gray-400 mt-0.5">Satisfacción</span>
+            <span class="text-xs text-[#94a3b8] mt-0.5">Satisfacción</span>
           </div>
           <div class="stat-pill">
             <span class="text-2xl font-black gradient-text">24/7</span>
-            <span class="text-xs text-gray-400 mt-0.5">Soporte</span>
+            <span class="text-xs text-[#94a3b8] mt-0.5">Soporte</span>
           </div>
         </div>
       </div>
 
-      <!-- Right: App mockup -->
+      <!-- Right: Mockup oscuro (contrasta perfecto sobre blanco) -->
       <div class="relative flex justify-center lg:justify-end">
         <div class="mockup-window w-full max-w-[420px]">
-          <!-- Topbar -->
           <div class="mockup-topbar">
             <div class="mini-dot bg-[#ff5f57]"></div>
             <div class="mini-dot bg-[#ffbd2e]"></div>
@@ -142,9 +132,7 @@
             </div>
           </div>
 
-          <!-- Body -->
           <div class="p-5 space-y-4">
-            <!-- Stat cards -->
             <div class="grid grid-cols-3 gap-2.5">
               <div class="bg-[#0d1a33] rounded-xl p-3.5 border border-white/5">
                 <p class="text-[0.65rem] text-gray-400 mb-1">Ventas hoy</p>
@@ -163,7 +151,6 @@
               </div>
             </div>
 
-            <!-- Mini chart -->
             <div class="bg-[#080f20] rounded-xl p-4 border border-white/5">
               <p class="text-[0.68rem] text-gray-400 mb-3 font-medium">Ventas — últimos 7 días</p>
               <div class="flex items-end gap-1.5 h-16">
@@ -177,25 +164,24 @@
               </div>
             </div>
 
-            <!-- Product list -->
             <div class="bg-[#080f20] rounded-xl px-4 py-3 border border-white/5">
               <p class="text-[0.68rem] text-gray-400 mb-2 font-medium">Más vendidos hoy</p>
               <div class="space-y-2">
-                <div class="flex justify-between items-center text-[0.75rem]">
+                <div class="flex justify-between text-[0.75rem]">
                   <div class="flex items-center gap-2">
                     <div class="w-1.5 h-1.5 rounded-full bg-[#2e6cf6]"></div>
                     <span class="text-gray-300">Camisa Casual</span>
                   </div>
                   <span class="text-[#4da3ff] font-medium">$89.000 × 12</span>
                 </div>
-                <div class="flex justify-between items-center text-[0.75rem]">
+                <div class="flex justify-between text-[0.75rem]">
                   <div class="flex items-center gap-2">
                     <div class="w-1.5 h-1.5 rounded-full bg-[#7b4dff]"></div>
                     <span class="text-gray-300">Jean Slim Fit</span>
                   </div>
                   <span class="text-purple-400 font-medium">$120.000 × 8</span>
                 </div>
-                <div class="flex justify-between items-center text-[0.75rem]">
+                <div class="flex justify-between text-[0.75rem]">
                   <div class="flex items-center gap-2">
                     <div class="w-1.5 h-1.5 rounded-full bg-[#4da3ff]"></div>
                     <span class="text-gray-300">Zapato Cuero</span>
@@ -207,9 +193,10 @@
           </div>
         </div>
 
-        <!-- Glow behind mockup -->
+        <!-- Glow detrás del mockup -->
         <div class="absolute inset-0 -z-10 flex items-center justify-center pointer-events-none">
-          <div class="w-80 h-80 rounded-full" style="background: radial-gradient(circle, rgba(46,108,246,0.2) 0%, transparent 70%); filter: blur(40px)"></div>
+          <div class="w-80 h-80 rounded-full opacity-30"
+               style="background: radial-gradient(circle, rgba(46,108,246,0.3) 0%, transparent 70%); filter: blur(50px)"></div>
         </div>
       </div>
 
@@ -218,17 +205,16 @@
 
   <!-- Bottom fade -->
   <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
-       style="background: linear-gradient(to bottom, transparent, #030810)"></div>
+       style="background: linear-gradient(to bottom, transparent, #f6f9ff)"></div>
 </section>
 
 
 <!-- ============================================================
      TECH TICKER
      ============================================================ -->
-<div class="bg-[#050c1a] border-y border-[rgba(46,108,246,0.08)] py-4 overflow-hidden">
+<div class="bg-[#f6f9ff] border-y border-[rgba(46,108,246,0.08)] py-4">
   <div class="ticker-wrap">
     <div class="ticker-track">
-      <!-- Duplicated for seamless loop -->
       <span class="tech-chip"><i class="pi pi-code"></i> Angular</span>
       <span class="tech-chip"><i class="pi pi-code"></i> React</span>
       <span class="tech-chip"><i class="pi pi-server"></i> Node.js</span>
@@ -241,7 +227,7 @@
       <span class="tech-chip"><i class="pi pi-mobile"></i> React Native</span>
       <span class="tech-chip"><i class="pi pi-cog"></i> Kubernetes</span>
       <span class="tech-chip"><i class="pi pi-database"></i> MongoDB</span>
-      <!-- duplicate -->
+      <!-- duplicate for loop -->
       <span class="tech-chip"><i class="pi pi-code"></i> Angular</span>
       <span class="tech-chip"><i class="pi pi-code"></i> React</span>
       <span class="tech-chip"><i class="pi pi-server"></i> Node.js</span>
@@ -262,17 +248,17 @@
 <!-- ============================================================
      SERVICIOS
      ============================================================ -->
-<section id="servicios" class="relative bg-[#030810] text-white py-24 px-4 overflow-hidden dot-bg">
-  <div class="orb w-[500px] h-[500px] top-0 right-0 opacity-50"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.12) 0%, transparent 65%)"></div>
+<section id="servicios" class="relative bg-[#f6f9ff] text-[#0f172a] py-24 px-4 overflow-hidden">
+  <div class="orb w-[500px] h-[500px] top-0 right-0 opacity-60"
+       style="background: radial-gradient(circle, rgba(46,108,246,0.08) 0%, transparent 65%)"></div>
 
   <div class="relative z-10 max-w-6xl mx-auto">
     <div class="text-center mb-16">
       <div class="section-tag">Lo que hacemos</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
         Nuestros <span class="gradient-text">Servicios</span>
       </h2>
-      <p class="text-gray-400 mt-4 max-w-xl mx-auto text-lg">
+      <p class="text-[#475569] mt-4 max-w-xl mx-auto text-lg">
         Soluciones completas para empresas que quieren crecer con tecnología de alto impacto
       </p>
     </div>
@@ -284,8 +270,8 @@
         <div class="icon-badge icon-badge-blue">
           <i class="pi pi-code" style="color: var(--aura-blue)"></i>
         </div>
-        <h3 class="text-white font-bold text-lg mb-2">Desarrollo Web</h3>
-        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Aplicaciones web modernas, responsivas y de alto rendimiento</p>
+        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Desarrollo Web</h3>
+        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Aplicaciones web modernas, responsivas y de alto rendimiento</p>
         <div class="space-y-1.5">
           <div class="feature-row"><i class="pi pi-check-circle"></i> React & Angular</div>
           <div class="feature-row"><i class="pi pi-check-circle"></i> APIs RESTful & GraphQL</div>
@@ -295,32 +281,32 @@
       </div>
 
       <!-- Aura POS (destacado) -->
-      <div class="glass-card p-7 relative" style="border-color: rgba(123,77,255,0.3);">
+      <div class="glass-card p-7 relative" style="border-color: rgba(123,77,255,0.2)">
         <div class="absolute top-4 right-4">
-          <span class="section-tag" style="margin: 0; font-size: 0.6rem; background: rgba(123,77,255,0.1); border-color: rgba(123,77,255,0.3); color: #a78bfa;">
+          <span class="section-tag" style="margin:0; font-size:0.6rem; background:rgba(123,77,255,0.07); border-color:rgba(123,77,255,0.25); color:#7b4dff">
             Producto propio
           </span>
         </div>
         <div class="icon-badge icon-badge-purple">
           <i class="pi pi-shopping-cart" style="color: var(--aura-purple)"></i>
         </div>
-        <h3 class="text-white font-bold text-lg mb-2">Aura POS</h3>
-        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Sistema de punto de venta en la nube para negocios modernos</p>
+        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Aura POS</h3>
+        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Sistema de punto de venta en la nube para negocios modernos</p>
         <div class="space-y-1.5">
-          <div class="feature-row" style="color: rgba(255,255,255,0.8)"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> POS en la nube</div>
-          <div class="feature-row" style="color: rgba(255,255,255,0.8)"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Control de inventario</div>
-          <div class="feature-row" style="color: rgba(255,255,255,0.8)"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Facturación electrónica</div>
-          <div class="feature-row" style="color: rgba(255,255,255,0.8)"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Multisede & multiusuario</div>
+          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> POS en la nube</div>
+          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Control de inventario</div>
+          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Facturación electrónica</div>
+          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Multisede & multiusuario</div>
         </div>
       </div>
 
-      <!-- Sistemas ERP -->
+      <!-- ERP -->
       <div class="glass-card p-7">
         <div class="icon-badge icon-badge-blue">
           <i class="pi pi-database" style="color: var(--aura-blue)"></i>
         </div>
-        <h3 class="text-white font-bold text-lg mb-2">Sistemas ERP</h3>
-        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Planificación de recursos empresariales para automatizar tu operación</p>
+        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Sistemas ERP</h3>
+        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Planificación de recursos empresariales para automatizar tu operación</p>
         <div class="space-y-1.5">
           <div class="feature-row"><i class="pi pi-check-circle"></i> Módulo contable</div>
           <div class="feature-row"><i class="pi pi-check-circle"></i> Gestión de RRHH</div>
@@ -334,8 +320,8 @@
         <div class="icon-badge icon-badge-blue">
           <i class="pi pi-mobile" style="color: var(--aura-blue)"></i>
         </div>
-        <h3 class="text-white font-bold text-lg mb-2">Apps Móviles</h3>
-        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Aplicaciones nativas e híbridas para iOS y Android</p>
+        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Apps Móviles</h3>
+        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Aplicaciones nativas e híbridas para iOS y Android</p>
         <div class="space-y-1.5">
           <div class="feature-row"><i class="pi pi-check-circle"></i> React Native</div>
           <div class="feature-row"><i class="pi pi-check-circle"></i> Flutter</div>
@@ -344,13 +330,13 @@
         </div>
       </div>
 
-      <!-- Backend & APIs -->
+      <!-- Backend -->
       <div class="glass-card p-7">
         <div class="icon-badge icon-badge-blue">
           <i class="pi pi-server" style="color: var(--aura-blue)"></i>
         </div>
-        <h3 class="text-white font-bold text-lg mb-2">Backend & APIs</h3>
-        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Arquitecturas robustas y escalables pensadas para el futuro</p>
+        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Backend & APIs</h3>
+        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Arquitecturas robustas y escalables pensadas para el futuro</p>
         <div class="space-y-1.5">
           <div class="feature-row"><i class="pi pi-check-circle"></i> Microservicios</div>
           <div class="feature-row"><i class="pi pi-check-circle"></i> Bases de datos SQL/NoSQL</div>
@@ -359,18 +345,18 @@
         </div>
       </div>
 
-      <!-- Cloud & DevOps -->
+      <!-- Cloud -->
       <div class="glass-card p-7">
         <div class="icon-badge icon-badge-purple">
           <i class="pi pi-cloud" style="color: var(--aura-purple)"></i>
         </div>
-        <h3 class="text-white font-bold text-lg mb-2">Cloud & DevOps</h3>
-        <p class="text-gray-400 text-sm mb-5 leading-relaxed">Migración y optimización en la nube para escalar sin límites</p>
+        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Cloud & DevOps</h3>
+        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Migración y optimización en la nube para escalar sin límites</p>
         <div class="space-y-1.5">
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> AWS & Azure</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Docker & Kubernetes</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> CI/CD automatizado</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Monitoreo 24/7</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> AWS & Azure</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Docker & Kubernetes</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> CI/CD automatizado</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Monitoreo 24/7</div>
         </div>
       </div>
 
@@ -382,14 +368,12 @@
 <!-- ============================================================
      AURA POS — PLANES
      ============================================================ -->
-<section id="aura-pos" class="relative bg-[#050c1a] text-white py-24 px-4 overflow-hidden">
-  <!-- Top gradient line -->
-  <div class="gradient-separator mb-0 absolute top-0 left-0 right-0"></div>
-
-  <div class="orb w-[600px] h-[600px] top-[-150px] left-[10%] opacity-60"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.13) 0%, transparent 65%)"></div>
-  <div class="orb w-[400px] h-[400px] bottom-[-100px] right-[5%] opacity-60"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.12) 0%, transparent 65%)"></div>
+<section id="aura-pos" class="relative bg-white text-[#0f172a] py-24 px-4 overflow-hidden">
+  <div class="gradient-separator absolute top-0 left-0 right-0"></div>
+  <div class="orb w-[500px] h-[500px] top-[-100px] left-[5%]"
+       style="background: radial-gradient(circle, rgba(46,108,246,0.07) 0%, transparent 65%)"></div>
+  <div class="orb w-[400px] h-[400px] bottom-[-80px] right-[5%]"
+       style="background: radial-gradient(circle, rgba(123,77,255,0.06) 0%, transparent 65%)"></div>
 
   <div class="relative z-10 max-w-5xl mx-auto">
     <div class="text-center mb-16">
@@ -397,28 +381,28 @@
         <i class="pi pi-shopping-cart text-[0.65rem]"></i>
         Producto propio
       </div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
         <span class="gradient-text">Aura POS</span>
       </h2>
-      <p class="text-gray-400 mt-4 max-w-lg mx-auto text-lg">
+      <p class="text-[#475569] mt-4 max-w-lg mx-auto text-lg">
         Tu punto de venta en la nube. Simple, potente y listo para crecer contigo desde el día uno.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
 
-      <!-- Plan Básico -->
+      <!-- Básico -->
       <div class="plan-card plan-default">
         <div class="mb-6">
-          <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Plan Básico</p>
+          <p class="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-2">Plan Básico</p>
           <div class="flex items-end gap-1.5">
-            <span class="text-4xl font-black text-white">$39.000</span>
-            <span class="text-gray-400 text-sm mb-1">/ mes</span>
+            <span class="text-4xl font-black text-[#0f172a]">$39.000</span>
+            <span class="text-[#94a3b8] text-sm mb-1">/ mes</span>
           </div>
-          <p class="text-gray-500 text-xs mt-2">Ideal para emprendedores y tiendas pequeñas</p>
+          <p class="text-[#94a3b8] text-xs mt-2">Ideal para emprendedores y tiendas pequeñas</p>
         </div>
         <div class="gradient-separator mb-6" style="opacity: 0.4"></div>
-        <div class="space-y-0 flex-1 mb-8">
+        <div class="flex-1 mb-8">
           <div class="feature-row"><i class="pi pi-check-circle"></i> POS en la nube</div>
           <div class="feature-row"><i class="pi pi-check-circle"></i> 1 sede</div>
           <div class="feature-row"><i class="pi pi-check-circle"></i> 2 usuarios</div>
@@ -428,8 +412,8 @@
         <a href="#contacto" class="btn-aura-outline w-full justify-center">Empezar ahora</a>
       </div>
 
-      <!-- Plan Negocio (POPULAR) -->
-      <div class="plan-card plan-featured md:-mt-6 md:mb-0 -mt-0">
+      <!-- Negocio (popular) -->
+      <div class="plan-card plan-featured md:-mt-6">
         <div class="mb-6">
           <p class="text-xs font-bold text-white/70 uppercase tracking-widest mb-2">Plan Negocio</p>
           <div class="flex items-end gap-1.5">
@@ -439,20 +423,20 @@
           <p class="text-white/50 text-xs mt-2">El más elegido por negocios en crecimiento</p>
         </div>
         <div class="h-px bg-white/15 mb-6"></div>
-        <div class="space-y-0 flex-1 mb-8">
-          <div class="feature-row" style="border-color: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85)">
+        <div class="flex-1 mb-8">
+          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
             <i class="pi pi-check-circle text-white"></i> 1 sede
           </div>
-          <div class="feature-row" style="border-color: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85)">
+          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
             <i class="pi pi-check-circle text-white"></i> 5 usuarios
           </div>
-          <div class="feature-row" style="border-color: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85)">
+          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
             <i class="pi pi-check-circle text-white"></i> Inventario avanzado
           </div>
-          <div class="feature-row" style="border-color: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85)">
+          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
             <i class="pi pi-check-circle text-white"></i> Reportes y analytics
           </div>
-          <div class="feature-row" style="border-color: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85)">
+          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
             <i class="pi pi-check-circle text-white"></i> Facturación electrónica
           </div>
         </div>
@@ -465,23 +449,23 @@
         </a>
       </div>
 
-      <!-- Plan Multiempresa -->
+      <!-- Multiempresa -->
       <div class="plan-card plan-default">
         <div class="mb-6">
-          <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Plan Multiempresa</p>
+          <p class="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-2">Plan Multiempresa</p>
           <div class="flex items-end gap-1.5">
-            <span class="text-4xl font-black text-white">$99.000</span>
-            <span class="text-gray-400 text-sm mb-1">/ mes</span>
+            <span class="text-4xl font-black text-[#0f172a]">$99.000</span>
+            <span class="text-[#94a3b8] text-sm mb-1">/ mes</span>
           </div>
-          <p class="text-gray-500 text-xs mt-2">Para empresas con múltiples operaciones</p>
+          <p class="text-[#94a3b8] text-xs mt-2">Para empresas con múltiples operaciones</p>
         </div>
         <div class="gradient-separator mb-6" style="opacity: 0.4"></div>
-        <div class="space-y-0 flex-1 mb-8">
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Múltiples sedes</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Multiempresa</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Dashboard ejecutivo</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Soporte prioritario</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Usuarios ilimitados</div>
+        <div class="flex-1 mb-8">
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Múltiples sedes</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Multiempresa</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Dashboard ejecutivo</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Soporte prioritario</div>
+          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Usuarios ilimitados</div>
         </div>
         <a href="#contacto" class="btn-aura w-full justify-center">Empezar ahora</a>
       </div>
@@ -494,17 +478,17 @@
 <!-- ============================================================
      POR QUÉ ELEGIRNOS
      ============================================================ -->
-<section id="porque-elegir" class="relative bg-[#030810] text-white py-24 px-4 overflow-hidden grid-bg">
-  <div class="orb w-[450px] h-[450px] top-0 right-0 opacity-40"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.14) 0%, transparent 65%)"></div>
+<section id="porque-elegir" class="relative bg-[#f6f9ff] text-[#0f172a] py-24 px-4 overflow-hidden">
+  <div class="orb w-[400px] h-[400px] top-0 right-0 opacity-60"
+       style="background: radial-gradient(circle, rgba(123,77,255,0.07) 0%, transparent 65%)"></div>
 
   <div class="relative z-10 max-w-6xl mx-auto">
     <div class="text-center mb-16">
       <div class="section-tag">Por qué nosotros</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
         ¿Por qué elegir <span class="gradient-text">Cloud Tecnological</span>?
       </h2>
-      <p class="text-gray-400 mt-4 max-w-xl mx-auto text-lg">
+      <p class="text-[#475569] mt-4 max-w-xl mx-auto text-lg">
         Combinamos experiencia, innovación y compromiso para entregar resultados excepcionales
       </p>
     </div>
@@ -515,32 +499,32 @@
         <div class="icon-badge icon-badge-blue mx-auto mb-4 w-14 h-14 rounded-2xl">
           <span class="material-symbols-outlined text-2xl" style="color: var(--aura-blue)">rocket_launch</span>
         </div>
-        <h3 class="font-bold text-white mb-2">Desarrollo Ágil</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">Metodologías ágiles para entregas rápidas, iterativas y eficientes</p>
+        <h3 class="font-bold text-[#0f172a] mb-2">Desarrollo Ágil</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">Metodologías ágiles para entregas rápidas, iterativas y eficientes</p>
       </div>
 
       <div class="why-card text-center">
         <div class="icon-badge icon-badge-blue mx-auto mb-4 w-14 h-14 rounded-2xl">
           <span class="material-symbols-outlined text-2xl" style="color: var(--aura-blue)">shield</span>
         </div>
-        <h3 class="font-bold text-white mb-2">Seguridad Garantizada</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">Mejores prácticas de seguridad en cada capa de tus aplicaciones</p>
+        <h3 class="font-bold text-[#0f172a] mb-2">Seguridad Garantizada</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">Mejores prácticas de seguridad en cada capa de tus aplicaciones</p>
       </div>
 
       <div class="why-card text-center">
         <div class="icon-badge icon-badge-purple mx-auto mb-4 w-14 h-14 rounded-2xl">
           <span class="material-symbols-outlined text-2xl" style="color: var(--aura-purple)">tune</span>
         </div>
-        <h3 class="font-bold text-white mb-2">100% Personalizado</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">Cada proyecto se adapta exactamente a tus necesidades de negocio</p>
+        <h3 class="font-bold text-[#0f172a] mb-2">100% Personalizado</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">Cada proyecto se adapta exactamente a tus necesidades de negocio</p>
       </div>
 
       <div class="why-card text-center">
         <div class="icon-badge icon-badge-purple mx-auto mb-4 w-14 h-14 rounded-2xl">
           <span class="material-symbols-outlined text-2xl" style="color: var(--aura-purple)">support_agent</span>
         </div>
-        <h3 class="font-bold text-white mb-2">Soporte 24/7</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">Equipo dedicado disponible en todo momento para ti</p>
+        <h3 class="font-bold text-[#0f172a] mb-2">Soporte 24/7</h3>
+        <p class="text-[#475569] text-sm leading-relaxed">Equipo dedicado disponible en todo momento para ti</p>
       </div>
 
     </div>
@@ -551,69 +535,64 @@
 <!-- ============================================================
      PORTAFOLIO
      ============================================================ -->
-<section id="portafolio" class="relative bg-[#050c1a] text-white py-24 px-4 overflow-hidden">
+<section id="portafolio" class="relative bg-white text-[#0f172a] py-24 px-4 overflow-hidden">
   <div class="gradient-separator absolute top-0 left-0 right-0"></div>
 
   <div class="relative z-10 max-w-5xl mx-auto">
     <div class="text-center mb-16">
       <div class="section-tag">Casos de éxito</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
         Nuestro <span class="gradient-text">Portafolio</span>
       </h2>
-      <p class="text-gray-400 mt-4 max-w-xl mx-auto text-lg">
+      <p class="text-[#475569] mt-4 max-w-xl mx-auto text-lg">
         Proyectos reales que transformamos en soluciones de alto impacto
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
 
-      <!-- Proyecto 1: AgroSuit -->
       <div class="portfolio-card group">
-        <div class="relative h-52 overflow-hidden">
+        <div class="relative h-52 overflow-hidden bg-gray-100">
           <img src="https://www.shutterstock.com/image-vector/milk-farm-background-cows-bull-260nw-1791581201.jpg"
                alt="AgroSuit"
                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%)"></div>
           <span class="absolute top-4 right-4 text-white text-[0.65rem] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider"
                 style="background: var(--aura-gradient)">Agro-Tech</span>
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">AgroSuit</h3>
-          <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+          <h3 class="text-xl font-bold mb-2 text-[#0f172a]">AgroSuit</h3>
+          <p class="text-[#475569] text-sm mb-4 leading-relaxed">
             Plataforma integral para la gestión agrícola, optimizando cosechas, inventarios y recursos en tiempo real.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
-            <span class="tech-chip">Angular</span>
-            <span class="tech-chip">Java Spring Boot</span>
-            <span class="tech-chip">PostgreSQL</span>
+            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Angular</span>
+            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Spring Boot</span>
+            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">PostgreSQL</span>
           </div>
-          <a href="https://agrosuite-q377.vercel.app/dashboard"
-             class="btn-aura-outline w-full justify-center text-sm">
+          <a href="https://agrosuite-q377.vercel.app/dashboard" class="btn-aura-outline w-full justify-center text-sm">
             Ver proyecto <i class="pi pi-external-link text-xs"></i>
           </a>
         </div>
       </div>
 
-      <!-- Proyecto 2: ERP -->
       <div class="portfolio-card group">
-        <div class="relative h-52 overflow-hidden">
+        <div class="relative h-52 overflow-hidden bg-gray-100">
           <img src="https://altertecnia.com/wp-content/uploads/que-es-un-erp.jpg"
                alt="Sistemas ERP"
                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(10,22,40,0.85) 0%, transparent 60%)"></div>
           <span class="absolute top-4 right-4 text-white text-[0.65rem] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider"
                 style="background: var(--aura-gradient)">Business Software</span>
         </div>
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Sistemas ERP</h3>
-          <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+          <h3 class="text-xl font-bold mb-2 text-[#0f172a]">Sistemas ERP</h3>
+          <p class="text-[#475569] text-sm mb-4 leading-relaxed">
             Solución de planificación de recursos empresariales para automatizar y centralizar todos los procesos de negocio.
           </p>
           <div class="flex flex-wrap gap-2 mb-5">
-            <span class="tech-chip">React</span>
-            <span class="tech-chip">Node.js</span>
-            <span class="tech-chip">MongoDB</span>
-            <span class="tech-chip">Power BI</span>
+            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">React</span>
+            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Node.js</span>
+            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">MongoDB</span>
+            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Power BI</span>
           </div>
           <a href="#" class="btn-aura w-full justify-center text-sm">
             Ver proyecto <i class="pi pi-external-link text-xs"></i>
@@ -629,54 +608,50 @@
 <!-- ============================================================
      NOSOTROS
      ============================================================ -->
-<section id="nosotros" class="relative bg-[#030810] text-white py-24 px-4 md:px-20 overflow-hidden dot-bg">
-  <div class="orb w-[500px] h-[500px] top-[-100px] left-[-100px] opacity-50"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.12) 0%, transparent 65%)"></div>
+<section id="nosotros" class="relative bg-[#f6f9ff] text-[#0f172a] py-24 px-4 md:px-20 overflow-hidden">
+  <div class="orb w-[400px] h-[400px] top-0 left-[-80px]"
+       style="background: radial-gradient(circle, rgba(46,108,246,0.07) 0%, transparent 65%)"></div>
 
   <div class="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-14">
 
-    <!-- Image -->
     <div class="flex-1 relative">
-      <div class="absolute inset-0 rounded-2xl -m-3" style="background: var(--aura-gradient); opacity: 0.1; filter: blur(20px)"></div>
       <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
            alt="Equipo"
-           class="rounded-2xl relative z-10 w-full"
-           style="border: 1px solid rgba(46,108,246,0.2); box-shadow: 0 30px 80px rgba(0,0,0,0.4)" />
-      <!-- Floating badge -->
-      <div class="absolute -bottom-5 -right-5 z-20 glass-card px-5 py-4 shadow-xl" style="border-radius: 14px">
+           class="rounded-2xl w-full"
+           style="border: 1px solid rgba(46,108,246,0.12); box-shadow: 0 24px 70px rgba(0,0,0,0.1)" />
+      <div class="absolute -bottom-5 -right-5 z-20 bg-white rounded-2xl px-5 py-4 shadow-xl border border-[rgba(46,108,246,0.1)]">
         <p class="text-2xl font-black gradient-text">50+</p>
-        <p class="text-xs text-gray-400">proyectos entregados</p>
+        <p class="text-xs text-[#94a3b8]">proyectos entregados</p>
       </div>
     </div>
 
-    <!-- Text -->
     <div class="flex-1 space-y-6">
       <div class="section-tag">Quiénes somos</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
         Sobre <span class="gradient-text">Nosotros</span>
       </h2>
-      <p class="text-gray-400 leading-relaxed text-lg">
+      <p class="text-[#475569] leading-relaxed text-lg">
         En Cloud Tecnological somos un equipo apasionado de desarrolladores y diseñadores comprometidos con la excelencia.
-        Desarrollamos software a la medida, creamos productos propios como <strong class="text-white">Aura POS</strong>,
+        Desarrollamos software a la medida, creamos productos propios como <strong class="text-[#0f172a]">Aura POS</strong>,
         e implementamos soluciones ERP para empresas de todos los tamaños en Colombia y Latinoamérica.
       </p>
 
       <div class="grid grid-cols-2 gap-4 pt-2">
         <div class="stat-pill">
           <span class="text-2xl font-black gradient-text">50+</span>
-          <span class="text-xs text-gray-400 mt-0.5">Proyectos completados</span>
+          <span class="text-xs text-[#94a3b8] mt-0.5">Proyectos completados</span>
         </div>
         <div class="stat-pill">
           <span class="text-2xl font-black gradient-text">5+</span>
-          <span class="text-xs text-gray-400 mt-0.5">Años de experiencia</span>
+          <span class="text-xs text-[#94a3b8] mt-0.5">Años de experiencia</span>
         </div>
         <div class="stat-pill">
           <span class="text-2xl font-black gradient-text">100%</span>
-          <span class="text-xs text-gray-400 mt-0.5">Clientes satisfechos</span>
+          <span class="text-xs text-[#94a3b8] mt-0.5">Clientes satisfechos</span>
         </div>
         <div class="stat-pill">
           <span class="text-2xl font-black gradient-text">24/7</span>
-          <span class="text-xs text-gray-400 mt-0.5">Soporte técnico</span>
+          <span class="text-xs text-[#94a3b8] mt-0.5">Soporte técnico</span>
         </div>
       </div>
 
@@ -692,68 +667,65 @@
 <!-- ============================================================
      TESTIMONIOS
      ============================================================ -->
-<section id="testimonios" class="relative bg-[#050c1a] text-white py-24 px-4 overflow-hidden">
+<section id="testimonios" class="relative bg-white text-[#0f172a] py-24 px-4 overflow-hidden">
   <div class="gradient-separator absolute top-0 left-0 right-0"></div>
-  <div class="orb w-[400px] h-[400px] top-0 right-[-100px] opacity-50"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.1) 0%, transparent 65%)"></div>
+  <div class="orb w-[350px] h-[350px] top-0 right-[-60px]"
+       style="background: radial-gradient(circle, rgba(123,77,255,0.06) 0%, transparent 65%)"></div>
 
   <div class="relative z-10 max-w-5xl mx-auto">
     <div class="text-center mb-16">
       <div class="section-tag">Testimonios</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight">
+      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
         Lo que dicen nuestros <span class="gradient-text">Clientes</span>
       </h2>
-      <p class="text-gray-400 mt-4 max-w-xl mx-auto">
+      <p class="text-[#475569] mt-4 max-w-xl mx-auto">
         La satisfacción de nuestros clientes es nuestra mayor recompensa
       </p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">
 
-      <!-- Ferretotal -->
       <div class="testimonial-card">
         <div class="flex gap-0.5 mb-4" style="color: var(--aura-blue)">★★★★★</div>
-        <p class="text-gray-300 italic text-sm leading-relaxed mb-6">
+        <p class="text-[#475569] italic text-sm leading-relaxed mb-6">
           "Desde que implementamos Aura POS, el control de nuestro inventario y las ventas diarias es otro nivel. Ya no perdemos tiempo con cuadres manuales. Cloud Tecnological siempre está ahí cuando los necesitamos."
         </p>
-        <div class="flex items-center gap-3 pt-4 border-t border-white/5">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm"
-               style="background: var(--aura-gradient); letter-spacing: -0.5px">FT</div>
+        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm text-white"
+               style="background: var(--aura-gradient)">FT</div>
           <div>
-            <p class="font-bold text-sm text-white">Ferretotal</p>
-            <p class="text-xs text-gray-500">Cliente activo — Aura POS</p>
+            <p class="font-bold text-sm text-[#0f172a]">Ferretotal</p>
+            <p class="text-xs text-[#94a3b8]">Cliente activo — Aura POS</p>
           </div>
         </div>
       </div>
 
-      <!-- Soporte TYS Papelería -->
-      <div class="testimonial-card" style="border-color: rgba(46,108,246,0.22)">
+      <div class="testimonial-card" style="border-color: rgba(46,108,246,0.15)">
         <div class="flex gap-0.5 mb-4" style="color: var(--aura-blue)">★★★★★</div>
-        <p class="text-gray-300 italic text-sm leading-relaxed mb-6">
+        <p class="text-[#475569] italic text-sm leading-relaxed mb-6">
           "El sistema es muy fácil de usar y el soporte es rapidísimo. Cualquier duda que tenemos la resuelven el mismo día. Llevamos meses con ellos y no cambiaríamos nada."
         </p>
-        <div class="flex items-center gap-3 pt-4 border-t border-white/5">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm"
+        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm text-white"
                style="background: var(--aura-gradient)">ST</div>
           <div>
-            <p class="font-bold text-sm text-white">Soporte TYS Papelería</p>
-            <p class="text-xs text-gray-500">Cliente activo — Aura POS</p>
+            <p class="font-bold text-sm text-[#0f172a]">Soporte TYS Papelería</p>
+            <p class="text-xs text-[#94a3b8]">Cliente activo — Aura POS</p>
           </div>
         </div>
       </div>
 
-      <!-- Carnicería La 10 -->
       <div class="testimonial-card">
         <div class="flex gap-0.5 mb-4" style="color: var(--aura-purple)">★★★★★</div>
-        <p class="text-gray-300 italic text-sm leading-relaxed mb-6">
+        <p class="text-[#475569] italic text-sm leading-relaxed mb-6">
           "La facturación y el manejo de productos cambió completamente. Ahora sé exactamente cuánto vendí cada día y qué me queda en inventario. El equipo de Cloud es muy profesional y pendiente."
         </p>
-        <div class="flex items-center gap-3 pt-4 border-t border-white/5">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm"
+        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm text-white"
                style="background: linear-gradient(135deg, #7b4dff, #4da3ff)">L10</div>
           <div>
-            <p class="font-bold text-sm text-white">Carnicería La 10</p>
-            <p class="text-xs text-gray-500">Cliente activo — Aura POS</p>
+            <p class="font-bold text-sm text-[#0f172a]">Carnicería La 10</p>
+            <p class="text-xs text-[#94a3b8]">Cliente activo — Aura POS</p>
           </div>
         </div>
       </div>
@@ -764,57 +736,55 @@
 
 
 <!-- ============================================================
-     CTA
+     CTA — mantiene fondo degradado (punto focal oscuro)
      ============================================================ -->
-<section id="contacto" class="relative bg-[#030810] text-white py-24 px-4 overflow-hidden">
-  <div class="orb w-[700px] h-[700px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.12) 0%, rgba(123,77,255,0.08) 50%, transparent 70%)"></div>
+<section id="contacto" class="relative text-white py-24 px-4 overflow-hidden"
+         style="background: linear-gradient(135deg, #1a3a8f 0%, #0f172a 40%, #2d1a6e 100%)">
+
+  <div class="orb w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+       style="background: radial-gradient(circle, rgba(46,108,246,0.2) 0%, rgba(123,77,255,0.1) 50%, transparent 70%)"></div>
+  <!-- subtle grid -->
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
 
   <div class="relative z-10 max-w-4xl mx-auto">
-    <div class="rounded-2xl text-center px-8 py-16 border relative overflow-hidden"
-         style="background: linear-gradient(135deg, rgba(13,21,37,0.9) 0%, rgba(18,10,38,0.9) 100%);
-                border-color: rgba(46,108,246,0.2);
-                box-shadow: 0 0 80px rgba(46,108,246,0.1), inset 0 1px 0 rgba(255,255,255,0.04)">
-
-      <!-- Top accent line -->
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-0.5 rounded-full"
-           style="background: var(--aura-gradient)"></div>
-
-      <div class="section-tag mx-auto w-fit">¿Hablamos?</div>
-
-      <h2 class="text-3xl md:text-4xl font-black mb-4 tracking-tight">
-        ¿Listo para <span class="gradient-text">transformar</span> tu negocio?
+    <div class="text-center px-8 py-16">
+      <div class="section-tag mx-auto w-fit" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.2); color:rgba(255,255,255,0.8)">
+        ¿Hablamos?
+      </div>
+      <h2 class="text-3xl md:text-5xl font-black mb-5 tracking-tight">
+        ¿Listo para <span style="background:linear-gradient(135deg,#4da3ff,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text">transformar</span> tu negocio?
       </h2>
-      <p class="text-gray-400 mb-10 max-w-lg mx-auto text-lg leading-relaxed">
+      <p class="text-white/60 mb-10 max-w-lg mx-auto text-lg leading-relaxed">
         Cuéntanos tu idea o reto. Nuestro equipo te responde en menos de 24 horas con una propuesta a tu medida.
       </p>
       <div class="flex justify-center gap-4 flex-wrap">
         <a href="mailto:{{ email }}" class="btn-aura text-base py-3.5 px-8">
           Solicitar cotización <i class="pi pi-envelope text-xs"></i>
         </a>
-        <a href="#aura-pos" class="btn-aura-outline text-base py-3.5 px-8">
-          Ver planes Aura POS
-        </a>
-      </div>
-
-      <!-- Contact info row -->
-      <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-gray-500">
-        <a href="https://wa.me/573204116945?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios."
+        <a href="https://wa.me/573204116945?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n."
            target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 transition-colors hover:text-green-400">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-green-400">
+           class="flex items-center gap-2.5 font-semibold px-8 py-3.5 rounded-lg transition-all text-base"
+           style="background: rgba(37,211,102,0.15); border: 1px solid rgba(37,211,102,0.4); color: #4ade80"
+           onmouseover="this.style.background='rgba(37,211,102,0.25)'"
+           onmouseout="this.style.background='rgba(37,211,102,0.15)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
           </svg>
-          +57 3204116945
+          WhatsApp
         </a>
-        <span class="flex items-center gap-2">
-          <i class="pi pi-envelope" style="color: var(--aura-blue)"></i> {{ email }}
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="pi pi-map-marker" style="color: var(--aura-blue)"></i> Montelíbano, Córdoba — Colombia
-        </span>
       </div>
 
+      <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-white/40">
+        <span class="flex items-center gap-2">
+          <i class="pi pi-phone" style="color: var(--aura-blue-light)"></i> +57 3204116945
+        </span>
+        <span class="flex items-center gap-2">
+          <i class="pi pi-envelope" style="color: var(--aura-blue-light)"></i> {{ email }}
+        </span>
+        <span class="flex items-center gap-2">
+          <i class="pi pi-map-marker" style="color: var(--aura-blue-light)"></i> Montelíbano, Córdoba — Colombia
+        </span>
+      </div>
     </div>
   </div>
 </section>
@@ -823,13 +793,12 @@
 <!-- ============================================================
      FOOTER
      ============================================================ -->
-<footer class="bg-[#020710] text-gray-400 px-4 pt-16 pb-8">
+<footer class="bg-[#0a0f1e] text-gray-400 px-4 pt-16 pb-8">
   <div class="max-w-7xl mx-auto">
 
-    <div class="grid md:grid-cols-4 gap-10 pb-12 border-b" style="border-color: rgba(46,108,246,0.08)">
+    <div class="grid md:grid-cols-4 gap-10 pb-12 border-b border-white/5">
 
-      <!-- Brand -->
-      <div class="md:col-span-1">
+      <div>
         <div class="flex items-center gap-2.5 mb-5">
           <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: var(--aura-gradient)">
             <i class="pi pi-cloud text-white text-sm"></i>
@@ -840,58 +809,52 @@
           Transformando ideas en soluciones tecnológicas innovadoras desde 2019.
         </p>
         <div class="flex gap-2.5">
-          <a href="#" class="w-8 h-8 rounded-lg flex items-center justify-center border transition-all text-sm hover:text-white"
-             style="border-color: rgba(46,108,246,0.2)"
-             onmouseover="this.style.borderColor='var(--aura-blue)'; this.style.background='rgba(46,108,246,0.1)'"
-             onmouseout="this.style.borderColor='rgba(46,108,246,0.2)'; this.style.background='transparent'">
+          <a href="#" class="w-8 h-8 rounded-lg flex items-center justify-center border text-sm transition-all hover:text-white hover:border-[#2e6cf6] hover:bg-[rgba(46,108,246,0.1)]"
+             style="border-color: rgba(255,255,255,0.08)">
             <i class="pi pi-linkedin"></i>
           </a>
-          <a href="#" class="w-8 h-8 rounded-lg flex items-center justify-center border transition-all text-sm hover:text-white"
-             style="border-color: rgba(46,108,246,0.2)"
-             onmouseover="this.style.borderColor='var(--aura-blue)'; this.style.background='rgba(46,108,246,0.1)'"
-             onmouseout="this.style.borderColor='rgba(46,108,246,0.2)'; this.style.background='transparent'">
+          <a href="#" class="w-8 h-8 rounded-lg flex items-center justify-center border text-sm transition-all hover:text-white hover:border-[#2e6cf6] hover:bg-[rgba(46,108,246,0.1)]"
+             style="border-color: rgba(255,255,255,0.08)">
             <i class="pi pi-instagram"></i>
           </a>
-          <a href="#" class="w-8 h-8 rounded-lg flex items-center justify-center border transition-all text-sm hover:text-white"
-             style="border-color: rgba(46,108,246,0.2)"
-             onmouseover="this.style.borderColor='var(--aura-blue)'; this.style.background='rgba(46,108,246,0.1)'"
-             onmouseout="this.style.borderColor='rgba(46,108,246,0.2)'; this.style.background='transparent'">
-            <i class="pi pi-twitter"></i>
+          <a href="https://wa.me/573204116945" target="_blank" rel="noopener noreferrer"
+             class="w-8 h-8 rounded-lg flex items-center justify-center border text-sm transition-all hover:text-green-400 hover:border-green-500"
+             style="border-color: rgba(255,255,255,0.08)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
           </a>
         </div>
       </div>
 
-      <!-- Productos -->
       <div>
-        <h4 class="font-bold text-white mb-4 text-sm tracking-wide">Productos</h4>
+        <h4 class="font-bold text-white mb-4 text-sm">Productos</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href="#aura-pos"  class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Aura POS</a></li>
-          <li><a href="#servicios" class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Sistemas ERP</a></li>
-          <li><a href="#servicios" class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Desarrollo Web</a></li>
-          <li><a href="#servicios" class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Apps Móviles</a></li>
+          <li><a href="#aura-pos"  class="hover:text-white transition-colors">Aura POS</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Sistemas ERP</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Desarrollo Web</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Apps Móviles</a></li>
         </ul>
       </div>
 
-      <!-- Empresa -->
       <div>
-        <h4 class="font-bold text-white mb-4 text-sm tracking-wide">Empresa</h4>
+        <h4 class="font-bold text-white mb-4 text-sm">Empresa</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href="#nosotros"    class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Sobre Nosotros</a></li>
-          <li><a href="#portafolio"  class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Portafolio</a></li>
-          <li><a href="#testimonios" class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Testimonios</a></li>
-          <li><a href="#contacto"    class="hover:text-white transition-colors hover:translate-x-0.5 inline-block duration-200">Contacto</a></li>
+          <li><a href="#nosotros"    class="hover:text-white transition-colors">Sobre Nosotros</a></li>
+          <li><a href="#portafolio"  class="hover:text-white transition-colors">Portafolio</a></li>
+          <li><a href="#testimonios" class="hover:text-white transition-colors">Testimonios</a></li>
+          <li><a href="#contacto"    class="hover:text-white transition-colors">Contacto</a></li>
         </ul>
       </div>
 
-      <!-- Contacto -->
       <div>
-        <h4 class="font-bold text-white mb-4 text-sm tracking-wide">Contacto</h4>
+        <h4 class="font-bold text-white mb-4 text-sm">Contacto</h4>
         <ul class="space-y-3 text-sm">
           <li class="flex items-center gap-2.5">
-            <i class="pi pi-envelope" style="color: var(--aura-blue)"></i>
+            <i class="pi pi-envelope" style="color: var(--aura-blue-light)"></i>
             <span>{{ email }}</span>
           </li>
-          <li class="flex items-center gap-2.5">
+          <li>
             <a href="https://wa.me/573204116945?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios."
                target="_blank" rel="noopener noreferrer"
                class="flex items-center gap-2.5 hover:text-green-400 transition-colors">
@@ -902,7 +865,7 @@
             </a>
           </li>
           <li class="flex items-start gap-2.5">
-            <i class="pi pi-map-marker mt-0.5" style="color: var(--aura-blue)"></i>
+            <i class="pi pi-map-marker mt-0.5" style="color: var(--aura-blue-light)"></i>
             <span>Montelíbano, Córdoba<br />Colombia</span>
           </li>
         </ul>
@@ -910,7 +873,6 @@
 
     </div>
 
-    <!-- Bottom bar -->
     <div class="flex flex-col md:flex-row justify-between items-center gap-3 pt-7 text-xs text-gray-600">
       <p>© 2025 Cloud Tecnological. Todos los derechos reservados.</p>
       <div class="flex gap-5">
