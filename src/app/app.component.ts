@@ -8,7 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  email = 'camiloolea200@gmail.com';
+  email = 'cloudtecnological.atencion@gmail.com';
   title = 'cloud-technological';
     isScrolled = false;
 
