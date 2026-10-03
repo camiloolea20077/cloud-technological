@@ -1,663 +1,446 @@
 <!-- ============================================================
-     WHATSAPP FLOATING BUTTON
+     WHATSAPP FLOTANTE
      ============================================================ -->
-<a href="https://wa.me/573204116945?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20y%20el%20sistema%20Aura%20POS."
+<a [href]="waLink('Hola, quiero conocer Aura Nube.')"
    target="_blank" rel="noopener noreferrer"
-   class="fixed bottom-6 right-6 z-50 flex items-center gap-3 group"
-   title="Chatea con nosotros por WhatsApp">
-
-  <span class="opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-2 group-hover:translate-x-0
-               bg-white border border-gray-200 text-gray-700 text-xs font-semibold
-               px-3 py-2 rounded-lg whitespace-nowrap shadow-lg pointer-events-none">
-    ¡Escríbenos ahora!
-  </span>
-
-  <div class="relative w-14 h-14 rounded-full flex items-center justify-center transition-all duration-300
-              group-hover:scale-110"
-       style="background: linear-gradient(135deg, #25d366, #128c7e);
-              box-shadow: 0 8px 30px rgba(37,211,102,0.45)">
-    <span class="absolute inset-0 rounded-full animate-ping opacity-25"
-          style="background: #25d366"></span>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-7 h-7 relative z-10">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-  </div>
+   class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full grid place-items-center text-white shadow-lg transition-transform hover:scale-105"
+   style="background: #1faa59"
+   aria-label="Escríbenos por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
 </a>
 
 
 <!-- ============================================================
      NAVBAR
      ============================================================ -->
-<nav
-  id="navbar"
-  class="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-3.5 bg-white/80 backdrop-blur-md"
-  [class.nav-scrolled]="isScrolled"
->
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <a href="#" class="flex items-center gap-2.5">
-      <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: var(--aura-gradient)">
-        <i class="pi pi-cloud text-white text-sm"></i>
-      </div>
-      <span class="font-bold text-[#0f172a] text-[0.95rem] tracking-tight">
-        Cloud <span class="gradient-text">Tecnological</span>
-      </span>
+<nav class="nav fixed top-0 inset-x-0 z-40" [class.nav-scrolled]="isScrolled || menuOpen()">
+  <div class="container-x flex items-center justify-between h-16">
+    <a href="#" class="flex items-center gap-2.5" aria-label="Cloud Tecnological, inicio">
+      <span class="logo-mark"><i class="pi pi-cloud text-sm"></i></span>
+      <span class="display font-bold text-[1.05rem]">Cloud Tecnological</span>
     </a>
 
     <ul class="hidden md:flex items-center gap-8">
-      <li><a href="#servicios"  class="nav-link">Servicios</a></li>
-      <li><a href="#aura-pos"   class="nav-link">Aura POS</a></li>
-      <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
-      <li><a href="#nosotros"   class="nav-link">Nosotros</a></li>
+      <li><a href="#aura-nube" class="nav-link">Aura Nube</a></li>
+      <li><a href="#modulos"   class="nav-link">Módulos</a></li>
+      <li><a href="#planes"    class="nav-link">Planes</a></li>
+      <li><a href="#servicios" class="nav-link">Desarrollo a la medida</a></li>
+      <li><a href="#clientes"  class="nav-link">Clientes</a></li>
     </ul>
 
-    <a href="#contacto" class="btn-aura text-sm hidden md:inline-flex">
-      Solicitar demo <i class="pi pi-arrow-right text-xs"></i>
-    </a>
+    <div class="flex items-center gap-2">
+      <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
+         class="btn btn-dark hidden sm:inline-flex !py-2 !px-4 text-sm">
+        Agendar demo
+      </a>
+      <button type="button" class="md:hidden w-10 h-10 grid place-items-center rounded-lg border border-[var(--line)]"
+              (click)="menuOpen.set(!menuOpen())"
+              [attr.aria-expanded]="menuOpen()" aria-label="Abrir menú">
+        <i class="pi" [class.pi-bars]="!menuOpen()" [class.pi-times]="menuOpen()"></i>
+      </button>
+    </div>
   </div>
+
+  @if (menuOpen()) {
+    <div class="md:hidden border-t border-[var(--line)] bg-white">
+      <ul class="container-x flex flex-col py-3" (click)="menuOpen.set(false)">
+        <li><a href="#aura-nube" class="block py-3 nav-link">Aura Nube</a></li>
+        <li><a href="#modulos"   class="block py-3 nav-link">Módulos</a></li>
+        <li><a href="#planes"    class="block py-3 nav-link">Planes</a></li>
+        <li><a href="#servicios" class="block py-3 nav-link">Desarrollo a la medida</a></li>
+        <li><a href="#clientes"  class="block py-3 nav-link">Clientes</a></li>
+        <li class="pt-2">
+          <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
+             class="btn btn-dark w-full">Agendar demo</a>
+        </li>
+      </ul>
+    </div>
+  }
 </nav>
 
 
 <!-- ============================================================
-     HERO
+     HERO — AURA NUBE
      ============================================================ -->
-<section class="relative min-h-screen bg-white text-[#0f172a] flex items-center overflow-hidden grid-bg">
-  <!-- Orbs suaves sobre blanco -->
-  <div class="orb w-[700px] h-[700px] top-[-200px] right-[-150px]"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.1) 0%, transparent 65%)"></div>
-  <div class="orb w-[500px] h-[500px] bottom-[-100px] left-[-100px]"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.08) 0%, transparent 65%)"></div>
+<section id="aura-nube" class="pt-28 md:pt-36 pb-20 overflow-hidden">
+  <div class="container-x grid lg:grid-cols-[1fr_1.05fr] gap-14 lg:gap-16 items-center">
 
-  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full pt-28 pb-16">
-    <div class="grid lg:grid-cols-2 gap-14 items-center">
+    <div class="flex flex-col gap-7 min-w-0">
+      <span class="eyebrow"><i class="pi pi-cloud"></i> Aura Nube · ERP en la nube</span>
 
-      <!-- Left -->
-      <div class="space-y-7">
-        <div class="section-tag">
-          <span class="pulse-dot"></span>
-          Soluciones digitales para empresas
-        </div>
+      <h1 class="text-[2.6rem] sm:text-[3.4rem] lg:text-[4rem] font-extrabold leading-[1.02]">
+        Ventas, contabilidad y nómina en <span class="mark">un solo sistema</span>.
+      </h1>
 
-        <h1 class="text-[2.8rem] md:text-[3.8rem] font-black leading-[1.05] tracking-tight text-[#0f172a]">
-          Software que<br />
-          <span class="gradient-text">transforma</span><br />
-          tu empresa
-        </h1>
+      <p class="lead">
+        Aura Nube es el ERP de Cloud Tecnological para empresas colombianas. Vendes en el punto de venta,
+        el inventario se descuenta solo y la contabilidad queda registrada. Si solo necesitas
+        contabilidad o nómina, también lo puedes contratar por módulos.
+      </p>
 
-        <p class="text-[#475569] text-lg leading-relaxed max-w-lg">
-          Desarrollamos a la medida, ofrecemos <strong class="text-[#0f172a] font-semibold">Aura POS</strong> para tu punto de venta,
-          sistemas <strong class="text-[#0f172a] font-semibold">ERP</strong> y soluciones cloud que escalan con tu negocio.
-        </p>
-
-        <div class="flex flex-wrap gap-3 pt-1">
-          <a href="#aura-pos"  class="btn-aura text-base py-3 px-7">
-            Ver Aura POS <i class="pi pi-arrow-right text-xs"></i>
-          </a>
-          <a href="#servicios" class="btn-aura-outline text-base py-3 px-7">
-            Servicios
-          </a>
-        </div>
-
-        <!-- Stats -->
-        <div class="flex flex-wrap gap-4 pt-2">
-          <div class="stat-pill">
-            <span class="text-2xl font-black gradient-text">50+</span>
-            <span class="text-xs text-[#94a3b8] mt-0.5">Proyectos</span>
-          </div>
-          <div class="stat-pill">
-            <span class="text-2xl font-black gradient-text">5+</span>
-            <span class="text-xs text-[#94a3b8] mt-0.5">Años</span>
-          </div>
-          <div class="stat-pill">
-            <span class="text-2xl font-black gradient-text">100%</span>
-            <span class="text-xs text-[#94a3b8] mt-0.5">Satisfacción</span>
-          </div>
-          <div class="stat-pill">
-            <span class="text-2xl font-black gradient-text">24/7</span>
-            <span class="text-xs text-[#94a3b8] mt-0.5">Soporte</span>
-          </div>
-        </div>
+      <div class="flex flex-wrap gap-3">
+        <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary">
+          Agendar una demo gratis <i class="pi pi-arrow-right text-xs"></i>
+        </a>
+        <a href="#planes" class="btn btn-ghost">Ver planes y precios</a>
       </div>
 
-      <!-- Right: Mockup oscuro (contrasta perfecto sobre blanco) -->
-      <div class="relative flex justify-center lg:justify-end">
-        <div class="mockup-window w-full max-w-[420px]">
-          <div class="mockup-topbar">
-            <div class="mini-dot bg-[#ff5f57]"></div>
-            <div class="mini-dot bg-[#ffbd2e]"></div>
-            <div class="mini-dot bg-[#28ca41]"></div>
-            <span class="text-[0.72rem] text-gray-400 ml-2 font-medium">Aura POS — Panel Principal</span>
-            <div class="ml-auto flex items-center gap-1.5">
-              <span class="pulse-dot" style="background: #22c55e"></span>
-              <span class="text-[0.65rem] text-gray-400">en línea</span>
-            </div>
-          </div>
-
-          <div class="p-5 space-y-4">
-            <div class="grid grid-cols-3 gap-2.5">
-              <div class="bg-[#0d1a33] rounded-xl p-3.5 border border-white/5">
-                <p class="text-[0.65rem] text-gray-400 mb-1">Ventas hoy</p>
-                <p class="text-white font-bold text-sm">$1.247.500</p>
-                <p class="text-[0.65rem] text-green-400 mt-1">↑ 12.4%</p>
-              </div>
-              <div class="bg-[#0d1a33] rounded-xl p-3.5 border border-white/5">
-                <p class="text-[0.65rem] text-gray-400 mb-1">Transacciones</p>
-                <p class="text-white font-bold text-sm">47</p>
-                <p class="text-[0.65rem] text-[#4da3ff] mt-1">hoy</p>
-              </div>
-              <div class="bg-[#0d1a33] rounded-xl p-3.5 border border-white/5">
-                <p class="text-[0.65rem] text-gray-400 mb-1">Inventario</p>
-                <p class="text-white font-bold text-sm">1.832</p>
-                <p class="text-[0.65rem] text-purple-400 mt-1">ítems</p>
-              </div>
-            </div>
-
-            <div class="bg-[#080f20] rounded-xl p-4 border border-white/5">
-              <p class="text-[0.68rem] text-gray-400 mb-3 font-medium">Ventas — últimos 7 días</p>
-              <div class="flex items-end gap-1.5 h-16">
-                <div class="chart-bar" style="height: 38%"></div>
-                <div class="chart-bar" style="height: 55%"></div>
-                <div class="chart-bar" style="height: 42%"></div>
-                <div class="chart-bar" style="height: 78%"></div>
-                <div class="chart-bar" style="height: 60%"></div>
-                <div class="chart-bar" style="height: 92%"></div>
-                <div class="chart-bar" style="height: 68%"></div>
-              </div>
-            </div>
-
-            <div class="bg-[#080f20] rounded-xl px-4 py-3 border border-white/5">
-              <p class="text-[0.68rem] text-gray-400 mb-2 font-medium">Más vendidos hoy</p>
-              <div class="space-y-2">
-                <div class="flex justify-between text-[0.75rem]">
-                  <div class="flex items-center gap-2">
-                    <div class="w-1.5 h-1.5 rounded-full bg-[#2e6cf6]"></div>
-                    <span class="text-gray-300">Camisa Casual</span>
-                  </div>
-                  <span class="text-[#4da3ff] font-medium">$89.000 × 12</span>
-                </div>
-                <div class="flex justify-between text-[0.75rem]">
-                  <div class="flex items-center gap-2">
-                    <div class="w-1.5 h-1.5 rounded-full bg-[#7b4dff]"></div>
-                    <span class="text-gray-300">Jean Slim Fit</span>
-                  </div>
-                  <span class="text-purple-400 font-medium">$120.000 × 8</span>
-                </div>
-                <div class="flex justify-between text-[0.75rem]">
-                  <div class="flex items-center gap-2">
-                    <div class="w-1.5 h-1.5 rounded-full bg-[#4da3ff]"></div>
-                    <span class="text-gray-300">Zapato Cuero</span>
-                  </div>
-                  <span class="text-[#4da3ff] font-medium">$210.000 × 5</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Glow detrás del mockup -->
-        <div class="absolute inset-0 -z-10 flex items-center justify-center pointer-events-none">
-          <div class="w-80 h-80 rounded-full opacity-30"
-               style="background: radial-gradient(circle, rgba(46,108,246,0.3) 0%, transparent 70%); filter: blur(50px)"></div>
-        </div>
-      </div>
-
+      <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--body)]">
+        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Facturación electrónica DIAN (opcional)</li>
+        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Nómina electrónica</li>
+        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Contabilidad NIIF</li>
+      </ul>
     </div>
-  </div>
 
-  <!-- Bottom fade -->
-  <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
-       style="background: linear-gradient(to bottom, transparent, #f6f9ff)"></div>
+    <!-- Mockup del producto -->
+    <div class="relative min-w-0">
+      <div class="app-window">
+        <div class="app-topbar">
+          <span class="logo-mark !w-6 !h-6 !rounded-md !bg-[var(--pine)]"><i class="pi pi-cloud text-[0.6rem]"></i></span>
+          <span class="font-semibold text-white">Aura Nube</span>
+          <span class="mono text-[0.7rem] text-[#8fa39d] hidden sm:inline">Ferretotal S.A.S. · NIT 901.234.567-8</span>
+          <span class="ml-auto chip !bg-[rgba(255,255,255,0.08)] !text-[#c9d6d2]">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#3ddc97]"></span> En línea
+          </span>
+        </div>
+
+        <div class="app-tabs">
+          <span>Punto de venta</span>
+          <span>Inventario</span>
+          <span class="active">Contabilidad</span>
+          <span>Nómina</span>
+        </div>
+
+        <div class="p-4 sm:p-5 sm:pb-16 flex flex-col gap-4">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <p class="mono text-[0.68rem] uppercase tracking-wider text-[var(--muted)]">Comprobante de diario · CD-0582</p>
+              <p class="font-semibold text-[0.95rem] text-[var(--ink)]">Venta POS · Factura FE-1043</p>
+            </div>
+            <span class="chip"><i class="pi pi-bolt text-[0.6rem]"></i> Generado automáticamente</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="ledger">
+              <thead>
+                <tr><th>Cuenta PUC</th><th>Descripción</th><th class="num">Débito</th><th class="num">Crédito</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="mono">110505</td><td>Caja general</td><td class="num mono">1.190.000</td><td class="num mono">—</td></tr>
+                <tr><td class="mono">413524</td><td>Venta de ferretería</td><td class="num mono">—</td><td class="num mono">1.000.000</td></tr>
+                <tr><td class="mono">240805</td><td>IVA generado 19%</td><td class="num mono">—</td><td class="num mono">190.000</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td colspan="2">Sumas iguales</td><td class="num mono">1.190.000</td><td class="num mono">1.190.000</td></tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2">
+            <div class="rounded-lg bg-[var(--paper)] p-3">
+              <p class="text-[0.68rem] text-[var(--muted)]">Ventas hoy</p>
+              <p class="mono font-semibold text-[var(--ink)]">$4.870.500</p>
+            </div>
+            <div class="rounded-lg bg-[var(--paper)] p-3">
+              <p class="text-[0.68rem] text-[var(--muted)]">Facturas DIAN</p>
+              <p class="mono font-semibold text-[var(--ink)]">38 / 38</p>
+            </div>
+            <div class="rounded-lg bg-[var(--paper)] p-3">
+              <p class="text-[0.68rem] text-[var(--muted)]">Stock bajo</p>
+              <p class="mono font-semibold text-[#b7791f]">6 ítems</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-card hidden sm:flex items-center gap-3 -bottom-5 -left-6">
+        <span class="w-9 h-9 rounded-lg grid place-items-center bg-[var(--pine-tint)] text-[var(--pine)]"><i class="pi pi-users"></i></span>
+        <div>
+          <p class="font-semibold text-[var(--ink)]">Nómina de octubre</p>
+          <p class="text-[var(--muted)] text-[0.75rem]">12 empleados · transmitida a la DIAN</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 
 <!-- ============================================================
-     TECH TICKER
+     CAMBIO DE NOMBRE
      ============================================================ -->
-<div class="bg-[#f6f9ff] border-y border-[rgba(46,108,246,0.08)] py-4">
-  <div class="ticker-wrap">
-    <div class="ticker-track">
-      <span class="tech-chip"><i class="pi pi-code"></i> Angular</span>
-      <span class="tech-chip"><i class="pi pi-code"></i> React</span>
-      <span class="tech-chip"><i class="pi pi-server"></i> Node.js</span>
-      <span class="tech-chip"><i class="pi pi-database"></i> Spring Boot</span>
-      <span class="tech-chip"><i class="pi pi-database"></i> PostgreSQL</span>
-      <span class="tech-chip"><i class="pi pi-cloud"></i> AWS</span>
-      <span class="tech-chip"><i class="pi pi-cloud"></i> Azure</span>
-      <span class="tech-chip"><i class="pi pi-box"></i> Docker</span>
-      <span class="tech-chip"><i class="pi pi-mobile"></i> Flutter</span>
-      <span class="tech-chip"><i class="pi pi-mobile"></i> React Native</span>
-      <span class="tech-chip"><i class="pi pi-cog"></i> Kubernetes</span>
-      <span class="tech-chip"><i class="pi pi-database"></i> MongoDB</span>
-      <!-- duplicate for loop -->
-      <span class="tech-chip"><i class="pi pi-code"></i> Angular</span>
-      <span class="tech-chip"><i class="pi pi-code"></i> React</span>
-      <span class="tech-chip"><i class="pi pi-server"></i> Node.js</span>
-      <span class="tech-chip"><i class="pi pi-database"></i> Spring Boot</span>
-      <span class="tech-chip"><i class="pi pi-database"></i> PostgreSQL</span>
-      <span class="tech-chip"><i class="pi pi-cloud"></i> AWS</span>
-      <span class="tech-chip"><i class="pi pi-cloud"></i> Azure</span>
-      <span class="tech-chip"><i class="pi pi-box"></i> Docker</span>
-      <span class="tech-chip"><i class="pi pi-mobile"></i> Flutter</span>
-      <span class="tech-chip"><i class="pi pi-mobile"></i> React Native</span>
-      <span class="tech-chip"><i class="pi pi-cog"></i> Kubernetes</span>
-      <span class="tech-chip"><i class="pi pi-database"></i> MongoDB</span>
-    </div>
+<div class="bg-[var(--ink)] text-[#dbe5e2]">
+  <div class="container-x py-5 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-sm">
+    <span class="badge-amber w-fit">Nuevo nombre</span>
+    <p><strong class="text-white">Aura POS ahora es Aura Nube.</strong> Mismo equipo y mismo soporte, ahora con contabilidad, nómina y más módulos. Si ya eres cliente, tus datos siguen intactos.</p>
   </div>
 </div>
 
 
 <!-- ============================================================
-     SERVICIOS
+     MÓDULOS
      ============================================================ -->
-<section id="servicios" class="relative bg-[#f6f9ff] text-[#0f172a] py-24 px-4 overflow-hidden">
-  <div class="orb w-[500px] h-[500px] top-0 right-0 opacity-60"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.08) 0%, transparent 65%)"></div>
+<section id="modulos" class="section bg-[var(--paper)]">
+  <div class="container-x grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16">
 
-  <div class="relative z-10 max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <div class="section-tag">Lo que hacemos</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
-        Nuestros <span class="gradient-text">Servicios</span>
-      </h2>
-      <p class="text-[#475569] mt-4 max-w-xl mx-auto text-lg">
-        Soluciones completas para empresas que quieren crecer con tecnología de alto impacto
+    <div class="flex flex-col gap-5 lg:sticky lg:top-28 self-start min-w-0">
+      <span class="eyebrow">Módulos de Aura Nube</span>
+      <h2 class="section-title">Úsalo completo o solo la parte que necesitas.</h2>
+      <p class="lead">
+        Cada módulo funciona por separado. Cuando los unes, la información fluye sola:
+        una venta descuenta inventario y genera su comprobante contable sin digitar dos veces.
       </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Desarrollo Web -->
-      <div class="glass-card p-7">
-        <div class="icon-badge icon-badge-blue">
-          <i class="pi pi-code" style="color: var(--aura-blue)"></i>
-        </div>
-        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Desarrollo Web</h3>
-        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Aplicaciones web modernas, responsivas y de alto rendimiento</p>
-        <div class="space-y-1.5">
-          <div class="feature-row"><i class="pi pi-check-circle"></i> React & Angular</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> APIs RESTful & GraphQL</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Progressive Web Apps</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> UI/UX de alto nivel</div>
-        </div>
-      </div>
-
-      <!-- Aura POS (destacado) -->
-      <div class="glass-card p-7 relative" style="border-color: rgba(123,77,255,0.2)">
-        <div class="absolute top-4 right-4">
-          <span class="section-tag" style="margin:0; font-size:0.6rem; background:rgba(123,77,255,0.07); border-color:rgba(123,77,255,0.25); color:#7b4dff">
-            Producto propio
+      <div class="flex flex-col gap-3 pt-2">
+        <a href="#solo-modulos" class="side-offer">
+          <span class="module-icon !w-10 !h-10 shrink-0"><i class="pi pi-book"></i></span>
+          <span class="flex flex-col gap-1 min-w-0">
+            <span class="font-semibold text-[var(--ink)]">¿Eres contador? Aura Contable</span>
+            <span class="text-sm text-[var(--body)]">Lleva la contabilidad de todos tus clientes, aunque ellos facturen con otro sistema.</span>
           </span>
-        </div>
-        <div class="icon-badge icon-badge-purple">
-          <i class="pi pi-shopping-cart" style="color: var(--aura-purple)"></i>
-        </div>
-        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Aura POS</h3>
-        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Sistema de punto de venta en la nube para negocios modernos</p>
-        <div class="space-y-1.5">
-          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> POS en la nube</div>
-          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Control de inventario</div>
-          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Facturación electrónica</div>
-          <div class="feature-row" style="color: #475569"><i class="pi pi-check-circle" style="color: var(--aura-purple)"></i> Multisede & multiusuario</div>
-        </div>
-      </div>
-
-      <!-- ERP -->
-      <div class="glass-card p-7">
-        <div class="icon-badge icon-badge-blue">
-          <i class="pi pi-database" style="color: var(--aura-blue)"></i>
-        </div>
-        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Sistemas ERP</h3>
-        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Planificación de recursos empresariales para automatizar tu operación</p>
-        <div class="space-y-1.5">
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Módulo contable</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Gestión de RRHH</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> BI & Reportes avanzados</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Integraciones a medida</div>
-        </div>
-      </div>
-
-      <!-- Apps Móviles -->
-      <div class="glass-card p-7">
-        <div class="icon-badge icon-badge-blue">
-          <i class="pi pi-mobile" style="color: var(--aura-blue)"></i>
-        </div>
-        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Apps Móviles</h3>
-        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Aplicaciones nativas e híbridas para iOS y Android</p>
-        <div class="space-y-1.5">
-          <div class="feature-row"><i class="pi pi-check-circle"></i> React Native</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Flutter</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Swift & Kotlin nativos</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Publicación en stores</div>
-        </div>
-      </div>
-
-      <!-- Backend -->
-      <div class="glass-card p-7">
-        <div class="icon-badge icon-badge-blue">
-          <i class="pi pi-server" style="color: var(--aura-blue)"></i>
-        </div>
-        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Backend & APIs</h3>
-        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Arquitecturas robustas y escalables pensadas para el futuro</p>
-        <div class="space-y-1.5">
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Microservicios</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Bases de datos SQL/NoSQL</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Seguridad & autenticación</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Documentación API</div>
-        </div>
-      </div>
-
-      <!-- Cloud -->
-      <div class="glass-card p-7">
-        <div class="icon-badge icon-badge-purple">
-          <i class="pi pi-cloud" style="color: var(--aura-purple)"></i>
-        </div>
-        <h3 class="text-[#0f172a] font-bold text-lg mb-2">Cloud & DevOps</h3>
-        <p class="text-[#475569] text-sm mb-5 leading-relaxed">Migración y optimización en la nube para escalar sin límites</p>
-        <div class="space-y-1.5">
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> AWS & Azure</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Docker & Kubernetes</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> CI/CD automatizado</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Monitoreo 24/7</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     AURA POS — PLANES
-     ============================================================ -->
-<section id="aura-pos" class="relative bg-white text-[#0f172a] py-24 px-4 overflow-hidden">
-  <div class="gradient-separator absolute top-0 left-0 right-0"></div>
-  <div class="orb w-[500px] h-[500px] top-[-100px] left-[5%]"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.07) 0%, transparent 65%)"></div>
-  <div class="orb w-[400px] h-[400px] bottom-[-80px] right-[5%]"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.06) 0%, transparent 65%)"></div>
-
-  <div class="relative z-10 max-w-5xl mx-auto">
-    <div class="text-center mb-16">
-      <div class="section-tag">
-        <i class="pi pi-shopping-cart text-[0.65rem]"></i>
-        Producto propio
-      </div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
-        <span class="gradient-text">Aura POS</span>
-      </h2>
-      <p class="text-[#475569] mt-4 max-w-lg mx-auto text-lg">
-        Tu punto de venta en la nube. Simple, potente y listo para crecer contigo desde el día uno.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-
-      <!-- Básico -->
-      <div class="plan-card plan-default">
-        <div class="mb-6">
-          <p class="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-2">Plan Básico</p>
-          <div class="flex items-end gap-1.5">
-            <span class="text-4xl font-black text-[#0f172a]">$39.000</span>
-            <span class="text-[#94a3b8] text-sm mb-1">/ mes</span>
-          </div>
-          <p class="text-[#94a3b8] text-xs mt-2">Ideal para emprendedores y tiendas pequeñas</p>
-        </div>
-        <div class="gradient-separator mb-6" style="opacity: 0.4"></div>
-        <div class="flex-1 mb-8">
-          <div class="feature-row"><i class="pi pi-check-circle"></i> POS en la nube</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> 1 sede</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> 2 usuarios</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Inventario básico</div>
-          <div class="feature-row"><i class="pi pi-check-circle"></i> Facturación simple</div>
-        </div>
-        <a href="#contacto" class="btn-aura-outline w-full justify-center">Empezar ahora</a>
-      </div>
-
-      <!-- Negocio (popular) -->
-      <div class="plan-card plan-featured md:-mt-6">
-        <div class="mb-6">
-          <p class="text-xs font-bold text-white/70 uppercase tracking-widest mb-2">Plan Negocio</p>
-          <div class="flex items-end gap-1.5">
-            <span class="text-4xl font-black text-white">$59.000</span>
-            <span class="text-white/60 text-sm mb-1">/ mes</span>
-          </div>
-          <p class="text-white/50 text-xs mt-2">El más elegido por negocios en crecimiento</p>
-        </div>
-        <div class="h-px bg-white/15 mb-6"></div>
-        <div class="flex-1 mb-8">
-          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
-            <i class="pi pi-check-circle text-white"></i> 1 sede
-          </div>
-          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
-            <i class="pi pi-check-circle text-white"></i> 5 usuarios
-          </div>
-          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
-            <i class="pi pi-check-circle text-white"></i> Inventario avanzado
-          </div>
-          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
-            <i class="pi pi-check-circle text-white"></i> Reportes y analytics
-          </div>
-          <div class="feature-row" style="border-color:rgba(255,255,255,0.12); color:rgba(255,255,255,0.85)">
-            <i class="pi pi-check-circle text-white"></i> Facturación electrónica
-          </div>
-        </div>
-        <a href="#contacto"
-           class="block text-center font-bold py-3 px-6 rounded-lg transition-all"
-           style="background: white; color: var(--aura-blue);"
-           onmouseover="this.style.background='rgba(255,255,255,0.9)'; this.style.transform='translateY(-2px)'"
-           onmouseout="this.style.background='white'; this.style.transform='translateY(0)'">
-          Empezar ahora
+          <i class="pi pi-arrow-right text-xs text-[var(--pine)] ml-auto self-center"></i>
+        </a>
+        <a href="#solo-modulos" class="side-offer">
+          <span class="module-icon !w-10 !h-10 shrink-0"><i class="pi pi-users"></i></span>
+          <span class="flex flex-col gap-1 min-w-0">
+            <span class="font-semibold text-[var(--ink)]">¿Solo necesitas nómina? Aura Nómina</span>
+            <span class="text-sm text-[var(--body)]">Liquida y transmite la nómina electrónica sin contratar el ERP completo.</span>
+          </span>
+          <i class="pi pi-arrow-right text-xs text-[var(--pine)] ml-auto self-center"></i>
         </a>
       </div>
-
-      <!-- Multiempresa -->
-      <div class="plan-card plan-default">
-        <div class="mb-6">
-          <p class="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-2">Plan Multiempresa</p>
-          <div class="flex items-end gap-1.5">
-            <span class="text-4xl font-black text-[#0f172a]">$99.000</span>
-            <span class="text-[#94a3b8] text-sm mb-1">/ mes</span>
-          </div>
-          <p class="text-[#94a3b8] text-xs mt-2">Para empresas con múltiples operaciones</p>
-        </div>
-        <div class="gradient-separator mb-6" style="opacity: 0.4"></div>
-        <div class="flex-1 mb-8">
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Múltiples sedes</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Multiempresa</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Dashboard ejecutivo</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Soporte prioritario</div>
-          <div class="feature-row"><i class="pi pi-check-circle" style="color:var(--aura-purple)"></i> Usuarios ilimitados</div>
-        </div>
-        <a href="#contacto" class="btn-aura w-full justify-center">Empezar ahora</a>
-      </div>
-
     </div>
+
+    <div class="grid sm:grid-cols-2 gap-px bg-[var(--line)] border border-[var(--line)] rounded-[var(--radius)] overflow-hidden min-w-0">
+      <article class="module">
+        <span class="module-icon"><i class="pi pi-shopping-cart"></i></span>
+        <h3 class="text-xl font-bold">Punto de venta</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">Vende rápido desde el computador o la tablet, con o sin lector de código de barras.</p>
+        <ul class="check-list">
+          <li><i class="pi pi-check"></i> Factura electrónica DIAN como adicional</li>
+          <li><i class="pi pi-check"></i> Efectivo, tarjeta, Nequi y transferencias</li>
+          <li><i class="pi pi-check"></i> Cierre de caja por turno y cajero</li>
+        </ul>
+      </article>
+
+      <article class="module">
+        <span class="module-icon"><i class="pi pi-box"></i></span>
+        <h3 class="text-xl font-bold">Inventario</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">Sabes qué tienes, dónde está y cuánto te costó, en cada sede.</p>
+        <ul class="check-list">
+          <li><i class="pi pi-check"></i> Kardex y costo promedio</li>
+          <li><i class="pi pi-check"></i> Traslados entre bodegas y sedes</li>
+          <li><i class="pi pi-check"></i> Alertas de stock mínimo</li>
+        </ul>
+      </article>
+
+      <article class="module">
+        <span class="module-icon"><i class="pi pi-book"></i></span>
+        <h3 class="text-xl font-bold">Contabilidad</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">Contabilidad completa bajo NIIF, con el PUC colombiano listo para usar.</p>
+        <ul class="check-list">
+          <li><i class="pi pi-check"></i> Balance general y estado de resultados</li>
+          <li><i class="pi pi-check"></i> Cartera, proveedores y conciliación bancaria</li>
+          <li><i class="pi pi-check"></i> Retenciones, IVA y medios magnéticos</li>
+        </ul>
+      </article>
+
+      <article class="module">
+        <span class="module-icon"><i class="pi pi-users"></i></span>
+        <h3 class="text-xl font-bold">Nómina</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">Liquida salarios, prestaciones y seguridad social sin hojas de cálculo.</p>
+        <ul class="check-list">
+          <li><i class="pi pi-check"></i> Nómina electrónica transmitida a la DIAN</li>
+          <li><i class="pi pi-check"></i> Prima, cesantías, intereses y vacaciones</li>
+          <li><i class="pi pi-check"></i> Archivo plano para PILA</li>
+        </ul>
+      </article>
+    </div>
+
   </div>
 </section>
 
 
 <!-- ============================================================
-     POR QUÉ ELEGIRNOS
+     CÓMO FLUYE LA INFORMACIÓN
      ============================================================ -->
-<section id="porque-elegir" class="relative bg-[#f6f9ff] text-[#0f172a] py-24 px-4 overflow-hidden">
-  <div class="orb w-[400px] h-[400px] top-0 right-0 opacity-60"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.07) 0%, transparent 65%)"></div>
-
-  <div class="relative z-10 max-w-6xl mx-auto">
-    <div class="text-center mb-16">
-      <div class="section-tag">Por qué nosotros</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
-        ¿Por qué elegir <span class="gradient-text">Cloud Tecnological</span>?
-      </h2>
-      <p class="text-[#475569] mt-4 max-w-xl mx-auto text-lg">
-        Combinamos experiencia, innovación y compromiso para entregar resultados excepcionales
-      </p>
+<section class="section">
+  <div class="container-x flex flex-col gap-12">
+    <div class="flex flex-col gap-4 max-w-2xl">
+      <span class="eyebrow">Por qué un ERP</span>
+      <h2 class="section-title">Una venta, y todo queda al día.</h2>
+      <p class="lead">Esto pasa en Aura Nube cada vez que tu cajero registra una venta.</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-
-      <div class="why-card text-center">
-        <div class="icon-badge icon-badge-blue mx-auto mb-4 w-14 h-14 rounded-2xl">
-          <span class="material-symbols-outlined text-2xl" style="color: var(--aura-blue)">rocket_launch</span>
-        </div>
-        <h3 class="font-bold text-[#0f172a] mb-2">Desarrollo Ágil</h3>
-        <p class="text-[#475569] text-sm leading-relaxed">Metodologías ágiles para entregas rápidas, iterativas y eficientes</p>
-      </div>
-
-      <div class="why-card text-center">
-        <div class="icon-badge icon-badge-blue mx-auto mb-4 w-14 h-14 rounded-2xl">
-          <span class="material-symbols-outlined text-2xl" style="color: var(--aura-blue)">shield</span>
-        </div>
-        <h3 class="font-bold text-[#0f172a] mb-2">Seguridad Garantizada</h3>
-        <p class="text-[#475569] text-sm leading-relaxed">Mejores prácticas de seguridad en cada capa de tus aplicaciones</p>
-      </div>
-
-      <div class="why-card text-center">
-        <div class="icon-badge icon-badge-purple mx-auto mb-4 w-14 h-14 rounded-2xl">
-          <span class="material-symbols-outlined text-2xl" style="color: var(--aura-purple)">tune</span>
-        </div>
-        <h3 class="font-bold text-[#0f172a] mb-2">100% Personalizado</h3>
-        <p class="text-[#475569] text-sm leading-relaxed">Cada proyecto se adapta exactamente a tus necesidades de negocio</p>
-      </div>
-
-      <div class="why-card text-center">
-        <div class="icon-badge icon-badge-purple mx-auto mb-4 w-14 h-14 rounded-2xl">
-          <span class="material-symbols-outlined text-2xl" style="color: var(--aura-purple)">support_agent</span>
-        </div>
-        <h3 class="font-bold text-[#0f172a] mb-2">Soporte 24/7</h3>
-        <p class="text-[#475569] text-sm leading-relaxed">Equipo dedicado disponible en todo momento para ti</p>
-      </div>
-
-    </div>
+    <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
+        <span class="mono text-sm text-[var(--pine)]">Paso 1</span>
+        <h3 class="text-lg font-bold">Se registra la venta</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">El POS emite la venta y, si tienes facturación electrónica activa, la valida con la DIAN en segundos.</p>
+      </li>
+      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
+        <span class="mono text-sm text-[var(--pine)]">Paso 2</span>
+        <h3 class="text-lg font-bold">Baja el inventario</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">Cada producto vendido se descuenta de la bodega con su costo real.</p>
+      </li>
+      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
+        <span class="mono text-sm text-[var(--pine)]">Paso 3</span>
+        <h3 class="text-lg font-bold">Se contabiliza</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">El comprobante contable se crea solo: caja, ingreso, IVA y costo de venta.</p>
+      </li>
+      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
+        <span class="mono text-sm text-[var(--pine)]">Paso 4</span>
+        <h3 class="text-lg font-bold">Ves tus números</h3>
+        <p class="text-[var(--body)] text-[0.95rem]">Ventas, utilidad y flujo de caja actualizados, desde cualquier dispositivo.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
 
 <!-- ============================================================
-     PORTAFOLIO
+     PLANES
      ============================================================ -->
-<section id="portafolio" class="relative bg-white text-[#0f172a] py-24 px-4 overflow-hidden">
-  <div class="gradient-separator absolute top-0 left-0 right-0"></div>
+<section id="planes" class="section bg-[var(--paper)]">
+  <div class="container-x flex flex-col gap-12">
 
-  <div class="relative z-10 max-w-5xl mx-auto">
-    <div class="text-center mb-16">
-      <div class="section-tag">Casos de éxito</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
-        Nuestro <span class="gradient-text">Portafolio</span>
-      </h2>
-      <p class="text-[#475569] mt-4 max-w-xl mx-auto text-lg">
-        Proyectos reales que transformamos en soluciones de alto impacto
-      </p>
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+      <div class="flex flex-col gap-4 max-w-2xl">
+        <span class="eyebrow">Planes de Aura Nube</span>
+        <h2 class="section-title">Empieza con lo que necesitas y crece sin cambiar de sistema.</h2>
+        <p class="lead">Todos los planes incluyen implementación, capacitación a tu equipo y soporte por WhatsApp.</p>
+      </div>
+
+      <div class="flex flex-col items-start lg:items-end gap-2">
+        <div class="billing-toggle" role="group" aria-label="Periodo de facturación">
+          <button type="button" [class.active]="billing() === 'mensual'" (click)="setBilling('mensual')"
+                  [attr.aria-pressed]="billing() === 'mensual'">Mensual</button>
+          <button type="button" [class.active]="billing() === 'anual'" (click)="setBilling('anual')"
+                  [attr.aria-pressed]="billing() === 'anual'">Anual</button>
+        </div>
+        <p class="text-sm text-[var(--body)]">Pago anual: <strong class="text-[var(--ink)]">2 meses gratis</strong></p>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
-
-      <div class="portfolio-card group">
-        <div class="relative h-52 overflow-hidden bg-gray-100">
-          <img src="https://www.shutterstock.com/image-vector/milk-farm-background-cows-bull-260nw-1791581201.jpg"
-               alt="AgroSuit"
-               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-          <span class="absolute top-4 right-4 text-white text-[0.65rem] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider"
-                style="background: var(--aura-gradient)">Agro-Tech</span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-[#0f172a]">AgroSuit</h3>
-          <p class="text-[#475569] text-sm mb-4 leading-relaxed">
-            Plataforma integral para la gestión agrícola, optimizando cosechas, inventarios y recursos en tiempo real.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-5">
-            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Angular</span>
-            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Spring Boot</span>
-            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">PostgreSQL</span>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      @for (plan of plans; track plan.name) {
+        <article class="plan" [class.plan-highlight]="plan.highlight">
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between gap-2">
+              <h3 class="text-xl font-bold">{{ plan.name }}</h3>
+              @if (plan.highlight) { <span class="badge-amber">Más elegido</span> }
+            </div>
+            <p class="plan-tagline">{{ plan.tagline }}</p>
           </div>
-          <a href="https://agrosuite-q377.vercel.app/dashboard" class="btn-aura-outline w-full justify-center text-sm">
-            Ver proyecto <i class="pi pi-external-link text-xs"></i>
+
+          <div>
+            @if (plan.monthly !== null) {
+              <p class="display text-[2.4rem] font-bold leading-none">{{ price(plan.monthly) }}</p>
+              <p class="plan-unit mt-2">
+                @if (billing() === 'anual') { por mes, facturado anualmente } @else { por mes + IVA }
+              </p>
+            } @else {
+              <p class="display text-[2.4rem] font-bold leading-none">A la medida</p>
+              <p class="plan-unit mt-2">Cotización según tu operación</p>
+            }
+          </div>
+
+          <div class="flex flex-wrap gap-1.5">
+            @for (m of plan.modules; track m) { <span class="module-pill">{{ m }}</span> }
+          </div>
+
+          <div class="plan-divider"></div>
+
+          <ul class="check-list flex-1">
+            @for (f of plan.features; track f) {
+              <li><i class="pi pi-check"></i> {{ f }}</li>
+            }
+          </ul>
+
+          <a [href]="waLink('Hola, me interesa el plan ' + plan.name + ' de Aura Nube.')"
+             target="_blank" rel="noopener noreferrer"
+             class="btn w-full"
+             [class.btn-primary]="plan.highlight"
+             [class.btn-ghost]="!plan.highlight">
+            {{ plan.monthly === null ? 'Hablar con un asesor' : 'Empezar con ' + plan.name }}
           </a>
-        </div>
-      </div>
+        </article>
+      }
+    </div>
 
-      <div class="portfolio-card group">
-        <div class="relative h-52 overflow-hidden bg-gray-100">
-          <img src="https://altertecnia.com/wp-content/uploads/que-es-un-erp.jpg"
-               alt="Sistemas ERP"
-               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-          <span class="absolute top-4 right-4 text-white text-[0.65rem] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider"
-                style="background: var(--aura-gradient)">Business Software</span>
+    <!-- Adicional: facturación electrónica -->
+    <div class="plan !gap-6 lg:!grid lg:grid-cols-[1fr_1.4fr] lg:items-center">
+      <div class="flex flex-col gap-3 min-w-0">
+        <div class="flex items-center gap-3">
+          <span class="module-icon !w-10 !h-10 shrink-0"><i class="pi pi-file-check"></i></span>
+          <h3 class="text-xl font-bold">Facturación electrónica DIAN</h3>
+          <span class="module-pill">Adicional</span>
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2 text-[#0f172a]">Sistemas ERP</h3>
-          <p class="text-[#475569] text-sm mb-4 leading-relaxed">
-            Solución de planificación de recursos empresariales para automatizar y centralizar todos los procesos de negocio.
+        <div>
+          <p class="text-[var(--body)] text-[0.95rem]">
+            No está incluida en el precio de los planes. Se activa aparte con un proveedor tecnológico
+            autorizado por la DIAN y pagas solo el paquete de documentos que usas. Si no la necesitas, no pagas nada.
           </p>
-          <div class="flex flex-wrap gap-2 mb-5">
-            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">React</span>
-            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Node.js</span>
-            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">MongoDB</span>
-            <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(46,108,246,0.07); color:var(--aura-blue); border:1px solid rgba(46,108,246,0.15)">Power BI</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 flex-1 min-w-0">
+        @for (pack of einvoicePacks; track pack.name) {
+          <div class="rounded-[10px] border border-[var(--line)] bg-[var(--paper)] p-4 flex flex-col gap-1">
+            <p class="text-sm font-semibold text-[var(--ink)]">{{ pack.name }}</p>
+            <p class="display text-2xl font-bold">+{{ cop(pack.monthly) }}<span class="plan-unit font-normal"> / mes</span></p>
+            <p class="mono text-xs text-[var(--muted)]">Hasta {{ pack.docs }} documentos</p>
           </div>
-          <a href="#" class="btn-aura w-full justify-center text-sm">
-            Ver proyecto <i class="pi pi-external-link text-xs"></i>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ============================================================
-     NOSOTROS
-     ============================================================ -->
-<section id="nosotros" class="relative bg-[#f6f9ff] text-[#0f172a] py-24 px-4 md:px-20 overflow-hidden">
-  <div class="orb w-[400px] h-[400px] top-0 left-[-80px]"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.07) 0%, transparent 65%)"></div>
-
-  <div class="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-14">
-
-    <div class="flex-1 relative">
-      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
-           alt="Equipo"
-           class="rounded-2xl w-full"
-           style="border: 1px solid rgba(46,108,246,0.12); box-shadow: 0 24px 70px rgba(0,0,0,0.1)" />
-      <div class="absolute -bottom-5 -right-5 z-20 bg-white rounded-2xl px-5 py-4 shadow-xl border border-[rgba(46,108,246,0.1)]">
-        <p class="text-2xl font-black gradient-text">50+</p>
-        <p class="text-xs text-[#94a3b8]">proyectos entregados</p>
+        }
       </div>
     </div>
+    <p class="text-sm text-[var(--body)] -mt-6">
+      ¿Emites más de {{ einvoicePacks[einvoicePacks.length - 1].docs }} documentos al mes?
+      <a [href]="waLink('Hola, necesito un paquete grande de facturación electrónica.')" target="_blank" rel="noopener noreferrer"
+         class="text-[var(--pine)] font-semibold hover:underline">Te cotizamos un paquete a tu medida.</a>
+    </p>
 
-    <div class="flex-1 space-y-6">
-      <div class="section-tag">Quiénes somos</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
-        Sobre <span class="gradient-text">Nosotros</span>
-      </h2>
-      <p class="text-[#475569] leading-relaxed text-lg">
-        En Cloud Tecnological somos un equipo apasionado de desarrolladores y diseñadores comprometidos con la excelencia.
-        Desarrollamos software a la medida, creamos productos propios como <strong class="text-[#0f172a]">Aura POS</strong>,
-        e implementamos soluciones ERP para empresas de todos los tamaños en Colombia y Latinoamérica.
-      </p>
-
-      <div class="grid grid-cols-2 gap-4 pt-2">
-        <div class="stat-pill">
-          <span class="text-2xl font-black gradient-text">50+</span>
-          <span class="text-xs text-[#94a3b8] mt-0.5">Proyectos completados</span>
-        </div>
-        <div class="stat-pill">
-          <span class="text-2xl font-black gradient-text">5+</span>
-          <span class="text-xs text-[#94a3b8] mt-0.5">Años de experiencia</span>
-        </div>
-        <div class="stat-pill">
-          <span class="text-2xl font-black gradient-text">100%</span>
-          <span class="text-xs text-[#94a3b8] mt-0.5">Clientes satisfechos</span>
-        </div>
-        <div class="stat-pill">
-          <span class="text-2xl font-black gradient-text">24/7</span>
-          <span class="text-xs text-[#94a3b8] mt-0.5">Soporte técnico</span>
-        </div>
+    <!-- Módulos independientes -->
+    <div id="solo-modulos" class="flex flex-col gap-6 pt-4">
+      <div class="flex flex-col gap-2">
+        <h3 class="text-2xl font-bold">¿Solo contabilidad o solo nómina?</h3>
+        <p class="text-[var(--body)]">Contrata el módulo por separado. Si luego quieres el ERP completo, migramos tu información sin costo.</p>
       </div>
 
-      <a href="#contacto" class="btn-aura inline-flex mt-2">
-        Contáctanos <i class="pi pi-arrow-right text-xs"></i>
-      </a>
+      <div class="modules-row">
+        @for (mod of standaloneModules; track mod.name) {
+          <article class="plan module-card">
+            <div class="flex items-center gap-3">
+              <span class="module-icon !w-10 !h-10 shrink-0"><i [class]="'pi ' + mod.icon"></i></span>
+              <h4 class="display text-xl font-bold">{{ mod.name }}</h4>
+            </div>
+
+            <div>
+              <p class="display text-[2rem] font-bold leading-none">{{ price(mod.monthly) }}</p>
+              <p class="plan-unit mt-2">
+                {{ mod.unit }}@if (billing() === 'anual') {, facturado anualmente}
+              </p>
+            </div>
+
+            <p class="text-[var(--body)] text-[0.95rem]">{{ mod.description }}</p>
+
+            <div class="plan-divider"></div>
+
+            <ul class="check-list flex-1">
+              @for (f of mod.features; track f) { <li><i class="pi pi-check"></i> {{ f }}</li> }
+            </ul>
+
+            <a [href]="waLink('Hola, me interesa ' + mod.name + '.')" target="_blank" rel="noopener noreferrer"
+               class="btn btn-ghost w-full">
+              Quiero {{ mod.name }}
+            </a>
+          </article>
+        }
+      </div>
+
+      <p class="text-xs text-[var(--muted)]">Precios en pesos colombianos (COP), antes de IVA. El plan anual equivale a pagar 10 meses y usar 12. La facturación electrónica se cobra aparte según el paquete de documentos.</p>
     </div>
 
   </div>
@@ -665,127 +448,166 @@
 
 
 <!-- ============================================================
-     TESTIMONIOS
+     DESARROLLO A LA MEDIDA
      ============================================================ -->
-<section id="testimonios" class="relative bg-white text-[#0f172a] py-24 px-4 overflow-hidden">
-  <div class="gradient-separator absolute top-0 left-0 right-0"></div>
-  <div class="orb w-[350px] h-[350px] top-0 right-[-60px]"
-       style="background: radial-gradient(circle, rgba(123,77,255,0.06) 0%, transparent 65%)"></div>
+<section id="servicios" class="section">
+  <div class="container-x grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-16">
 
-  <div class="relative z-10 max-w-5xl mx-auto">
-    <div class="text-center mb-16">
-      <div class="section-tag">Testimonios</div>
-      <h2 class="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
-        Lo que dicen nuestros <span class="gradient-text">Clientes</span>
-      </h2>
-      <p class="text-[#475569] mt-4 max-w-xl mx-auto">
-        La satisfacción de nuestros clientes es nuestra mayor recompensa
+    <div class="flex flex-col gap-5 min-w-0">
+      <span class="eyebrow">Desarrollo a la medida</span>
+      <h2 class="section-title">¿Tu operación necesita algo que ningún software trae?</h2>
+      <p class="lead">
+        El mismo equipo que construye Aura Nube desarrolla software para empresas con procesos propios:
+        integraciones con tu ERP, aplicaciones móviles para tu equipo en campo o una plataforma completa.
       </p>
+      <a [href]="waLink('Hola, quiero cotizar un desarrollo a la medida.')" target="_blank" rel="noopener noreferrer"
+         class="btn btn-dark w-fit">Cuéntanos tu proyecto <i class="pi pi-arrow-right text-xs"></i></a>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <div class="testimonial-card">
-        <div class="flex gap-0.5 mb-4" style="color: var(--aura-blue)">★★★★★</div>
-        <p class="text-[#475569] italic text-sm leading-relaxed mb-6">
-          "Desde que implementamos Aura POS, el control de nuestro inventario y las ventas diarias es otro nivel. Ya no perdemos tiempo con cuadres manuales. Cloud Tecnological siempre está ahí cuando los necesitamos."
-        </p>
-        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm text-white"
-               style="background: var(--aura-gradient)">FT</div>
-          <div>
-            <p class="font-bold text-sm text-[#0f172a]">Ferretotal</p>
-            <p class="text-xs text-[#94a3b8]">Cliente activo — Aura POS</p>
-          </div>
+    <div class="min-w-0">
+      <div class="service">
+        <i class="pi pi-code"></i>
+        <div>
+          <h3 class="text-lg font-bold">Aplicaciones web</h3>
+          <p class="text-[var(--body)] text-[0.95rem]">Portales, plataformas internas y sistemas de gestión hechos para tu proceso, con Angular y React.</p>
         </div>
       </div>
-
-      <div class="testimonial-card" style="border-color: rgba(46,108,246,0.15)">
-        <div class="flex gap-0.5 mb-4" style="color: var(--aura-blue)">★★★★★</div>
-        <p class="text-[#475569] italic text-sm leading-relaxed mb-6">
-          "El sistema es muy fácil de usar y el soporte es rapidísimo. Cualquier duda que tenemos la resuelven el mismo día. Llevamos meses con ellos y no cambiaríamos nada."
-        </p>
-        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm text-white"
-               style="background: var(--aura-gradient)">ST</div>
-          <div>
-            <p class="font-bold text-sm text-[#0f172a]">Soporte TYS Papelería</p>
-            <p class="text-xs text-[#94a3b8]">Cliente activo — Aura POS</p>
-          </div>
+      <div class="service">
+        <i class="pi pi-mobile"></i>
+        <div>
+          <h3 class="text-lg font-bold">Apps móviles</h3>
+          <p class="text-[var(--body)] text-[0.95rem]">Apps para iOS y Android: toma de pedidos, rutas de venta, inspecciones en campo.</p>
         </div>
       </div>
-
-      <div class="testimonial-card">
-        <div class="flex gap-0.5 mb-4" style="color: var(--aura-purple)">★★★★★</div>
-        <p class="text-[#475569] italic text-sm leading-relaxed mb-6">
-          "La facturación y el manejo de productos cambió completamente. Ahora sé exactamente cuánto vendí cada día y qué me queda en inventario. El equipo de Cloud es muy profesional y pendiente."
-        </p>
-        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
-          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm text-white"
-               style="background: linear-gradient(135deg, #7b4dff, #4da3ff)">L10</div>
-          <div>
-            <p class="font-bold text-sm text-[#0f172a]">Carnicería La 10</p>
-            <p class="text-xs text-[#94a3b8]">Cliente activo — Aura POS</p>
-          </div>
+      <div class="service">
+        <i class="pi pi-sitemap"></i>
+        <div>
+          <h3 class="text-lg font-bold">Integraciones y APIs</h3>
+          <p class="text-[var(--body)] text-[0.95rem]">Conectamos Aura Nube o tu sistema actual con tiendas en línea, bancos, básculas y otros proveedores.</p>
         </div>
       </div>
+      <div class="service border-b border-[var(--line)]">
+        <i class="pi pi-server"></i>
+        <div>
+          <h3 class="text-lg font-bold">Nube e infraestructura</h3>
+          <p class="text-[var(--body)] text-[0.95rem]">Migración a la nube, copias de seguridad automáticas y monitoreo de tus servidores.</p>
+        </div>
+      </div>
+    </div>
 
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CLIENTES
+     ============================================================ -->
+<section id="clientes" class="section bg-[var(--paper)]">
+  <div class="container-x flex flex-col gap-12">
+    <div class="flex flex-col gap-4 max-w-2xl">
+      <span class="eyebrow">Clientes</span>
+      <h2 class="section-title">Negocios de la región que ya trabajan con Aura.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <figure class="quote">
+        <blockquote class="text-[var(--ink)] leading-relaxed">
+          “Desde que implementamos Aura, el control de nuestro inventario y las ventas diarias es otro nivel. Ya no perdemos tiempo con cuadres manuales. Cloud Tecnological siempre está ahí cuando los necesitamos.”
+        </blockquote>
+        <figcaption class="flex items-center gap-3">
+          <span class="avatar">FT</span>
+          <span><span class="block font-semibold text-sm">Ferretotal</span><span class="block text-xs text-[var(--muted)]">Ferretería</span></span>
+        </figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote class="text-[var(--ink)] leading-relaxed">
+          “El sistema es muy fácil de usar y el soporte es rapidísimo. Cualquier duda que tenemos la resuelven el mismo día. Llevamos meses con ellos y no cambiaríamos nada.”
+        </blockquote>
+        <figcaption class="flex items-center gap-3">
+          <span class="avatar">TY</span>
+          <span><span class="block font-semibold text-sm">TYS Papelería</span><span class="block text-xs text-[var(--muted)]">Papelería</span></span>
+        </figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote class="text-[var(--ink)] leading-relaxed">
+          “La facturación y el manejo de productos cambió completamente. Ahora sé exactamente cuánto vendí cada día y qué me queda en inventario. El equipo de Cloud es muy profesional y pendiente.”
+        </blockquote>
+        <figcaption class="flex items-center gap-3">
+          <span class="avatar">10</span>
+          <span><span class="block font-semibold text-sm">Carnicería La 10</span><span class="block text-xs text-[var(--muted)]">Carnicería</span></span>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
 
 <!-- ============================================================
-     CTA — mantiene fondo degradado (punto focal oscuro)
+     PREGUNTAS FRECUENTES
      ============================================================ -->
-<section id="contacto" class="relative text-white py-24 px-4 overflow-hidden"
-         style="background: linear-gradient(135deg, #1a3a8f 0%, #0f172a 40%, #2d1a6e 100%)">
+<section class="section">
+  <div class="container-x grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16">
+    <div class="flex flex-col gap-4">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2 class="section-title">Lo que más nos preguntan.</h2>
+    </div>
 
-  <div class="orb w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-       style="background: radial-gradient(circle, rgba(46,108,246,0.2) 0%, rgba(123,77,255,0.1) 50%, transparent 70%)"></div>
-  <!-- subtle grid -->
-  <div class="absolute inset-0 grid-bg opacity-30"></div>
+    <div class="border-b border-[var(--line)]">
+      <details class="faq">
+        <summary>¿Puedo usar solo la contabilidad, sin el punto de venta? <i class="pi pi-plus"></i></summary>
+        <p>Sí. Aura Contable funciona por separado: registras compras, ventas y gastos, o los importas desde otro sistema de facturación. Es ideal para contadores que llevan varias empresas.</p>
+      </details>
+      <details class="faq">
+        <summary>¿Aura Nube cumple con la DIAN? <i class="pi pi-plus"></i></summary>
+        <p>Sí. Emite factura electrónica, documento POS electrónico, notas crédito y nómina electrónica, y te acompañamos en la habilitación ante la DIAN.</p>
+      </details>
+      <details class="faq">
+        <summary>¿La facturación electrónica tiene costo adicional? <i class="pi pi-plus"></i></summary>
+        <p>Sí. La facturación electrónica se emite a través de un proveedor tecnológico autorizado por la DIAN, por eso se cobra aparte del plan. Pagas un paquete según los documentos que emites al mes, desde {{ cop(einvoicePacks[0].monthly) }}. Si tu negocio no está obligado a facturar electrónicamente, no la activas y no pagas nada.</p>
+      </details>
+      <details class="faq">
+        <summary>Ya uso Aura POS. ¿Qué cambia para mí? <i class="pi pi-plus"></i></summary>
+        <p>Solo el nombre. Tu información, usuarios y precio actual se mantienen. Si quieres agregar contabilidad o nómina, lo activamos sobre tu misma cuenta.</p>
+      </details>
+      <details class="faq">
+        <summary>¿Tengo que instalar algo? <i class="pi pi-plus"></i></summary>
+        <p>No. Aura Nube funciona desde el navegador en computador, tablet o celular. Tus datos quedan en la nube con copias de seguridad diarias.</p>
+      </details>
+      <details class="faq">
+        <summary>¿Cuánto tarda la implementación? <i class="pi pi-plus"></i></summary>
+        <p>Un negocio con punto de venta queda vendiendo en uno o dos días. Para contabilidad y nómina cargamos saldos iniciales y empleados contigo, normalmente en una semana.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
-  <div class="relative z-10 max-w-4xl mx-auto">
-    <div class="text-center px-8 py-16">
-      <div class="section-tag mx-auto w-fit" style="background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.2); color:rgba(255,255,255,0.8)">
-        ¿Hablamos?
-      </div>
-      <h2 class="text-3xl md:text-5xl font-black mb-5 tracking-tight">
-        ¿Listo para <span style="background:linear-gradient(135deg,#4da3ff,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text">transformar</span> tu negocio?
-      </h2>
-      <p class="text-white/60 mb-10 max-w-lg mx-auto text-lg leading-relaxed">
-        Cuéntanos tu idea o reto. Nuestro equipo te responde en menos de 24 horas con una propuesta a tu medida.
-      </p>
-      <div class="flex justify-center gap-4 flex-wrap">
-        <a href="mailto:{{ email }}" class="btn-aura text-base py-3.5 px-8">
-          Solicitar cotización <i class="pi pi-envelope text-xs"></i>
+
+<!-- ============================================================
+     CONTACTO
+     ============================================================ -->
+<section id="contacto" class="bg-[var(--ink)] text-white">
+  <div class="container-x py-20 md:py-24 grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-end">
+    <div class="flex flex-col gap-5">
+      <h2 class="section-title !text-white">Te mostramos Aura Nube con los datos de tu negocio.</h2>
+      <p class="text-[#a9bab5] text-lg max-w-[55ch]">Agenda una demo de 30 minutos. Te respondemos el mismo día hábil.</p>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
+           class="btn btn-wa">
+          <i class="pi pi-whatsapp"></i> Escribir por WhatsApp
         </a>
-        <a href="https://wa.me/573204116945?text=Hola%2C%20quiero%20una%20cotizaci%C3%B3n."
-           target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2.5 font-semibold px-8 py-3.5 rounded-lg transition-all text-base"
-           style="background: rgba(37,211,102,0.15); border: 1px solid rgba(37,211,102,0.4); color: #4ade80"
-           onmouseover="this.style.background='rgba(37,211,102,0.25)'"
-           onmouseout="this.style.background='rgba(37,211,102,0.15)'">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          WhatsApp
+        <a href="mailto:{{ email }}" class="btn btn-light">
+          <i class="pi pi-envelope"></i> Enviar correo
         </a>
       </div>
-
-      <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm text-white/40">
-        <span class="flex items-center gap-2">
-          <i class="pi pi-phone" style="color: var(--aura-blue-light)"></i> +57 3204116945
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="pi pi-envelope" style="color: var(--aura-blue-light)"></i> {{ email }}
-        </span>
-        <span class="flex items-center gap-2">
-          <i class="pi pi-map-marker" style="color: var(--aura-blue-light)"></i> Montelíbano, Córdoba — Colombia
-        </span>
-      </div>
     </div>
+
+    <ul class="flex flex-col gap-4 text-[#dbe5e2] text-sm lg:border-l lg:border-white/10 lg:pl-10">
+      <li class="flex items-center gap-3"><i class="pi pi-phone text-[var(--amber)]"></i> <span class="mono">+57 320 411 6945</span></li>
+      <li class="flex items-center gap-3"><i class="pi pi-envelope text-[var(--amber)]"></i> <span class="break-all">{{ email }}</span></li>
+      <li class="flex items-center gap-3"><i class="pi pi-map-marker text-[var(--amber)]"></i> Montelíbano, Córdoba · Colombia</li>
+    </ul>
   </div>
 </section>
 
@@ -793,93 +615,40 @@
 <!-- ============================================================
      FOOTER
      ============================================================ -->
-<footer class="bg-[#0a0f1e] text-gray-400 px-4 pt-16 pb-8">
-  <div class="max-w-7xl mx-auto">
-
-    <div class="grid md:grid-cols-4 gap-10 pb-12 border-b border-white/5">
-
-      <div>
-        <div class="flex items-center gap-2.5 mb-5">
-          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: var(--aura-gradient)">
-            <i class="pi pi-cloud text-white text-sm"></i>
-          </div>
-          <span class="font-bold text-white text-sm">Cloud Tecnological</span>
-        </div>
-        <p class="text-sm leading-relaxed mb-5">
-          Transformando ideas en soluciones tecnológicas innovadoras desde 2019.
-        </p>
-        <div class="flex gap-2.5">
-          <a href="#" class="w-8 h-8 rounded-lg flex items-center justify-center border text-sm transition-all hover:text-white hover:border-[#2e6cf6] hover:bg-[rgba(46,108,246,0.1)]"
-             style="border-color: rgba(255,255,255,0.08)">
-            <i class="pi pi-linkedin"></i>
-          </a>
-          <a href="#" class="w-8 h-8 rounded-lg flex items-center justify-center border text-sm transition-all hover:text-white hover:border-[#2e6cf6] hover:bg-[rgba(46,108,246,0.1)]"
-             style="border-color: rgba(255,255,255,0.08)">
-            <i class="pi pi-instagram"></i>
-          </a>
-          <a href="https://wa.me/573204116945" target="_blank" rel="noopener noreferrer"
-             class="w-8 h-8 rounded-lg flex items-center justify-center border text-sm transition-all hover:text-green-400 hover:border-green-500"
-             style="border-color: rgba(255,255,255,0.08)">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-            </svg>
-          </a>
-        </div>
+<footer class="bg-[#0a151b] text-[#8fa39d] text-sm">
+  <div class="container-x pt-14 pb-8 flex flex-col gap-10">
+    <div class="grid sm:grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr] gap-10">
+      <div class="flex flex-col gap-4 max-w-sm">
+        <span class="flex items-center gap-2.5">
+          <span class="logo-mark !bg-[var(--pine)]"><i class="pi pi-cloud text-sm"></i></span>
+          <span class="display font-bold text-white">Cloud Tecnological</span>
+        </span>
+        <p>Empresa colombiana de software. Creamos Aura Nube y desarrollamos soluciones a la medida desde 2019.</p>
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-4 text-sm">Productos</h4>
-        <ul class="space-y-2.5 text-sm">
-          <li><a href="#aura-pos"  class="hover:text-white transition-colors">Aura POS</a></li>
-          <li><a href="#servicios" class="hover:text-white transition-colors">Sistemas ERP</a></li>
-          <li><a href="#servicios" class="hover:text-white transition-colors">Desarrollo Web</a></li>
-          <li><a href="#servicios" class="hover:text-white transition-colors">Apps Móviles</a></li>
+        <h4 class="text-white font-semibold mb-4">Aura Nube</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a href="#modulos" class="hover:text-white transition-colors">Punto de venta</a></li>
+          <li><a href="#modulos" class="hover:text-white transition-colors">Contabilidad</a></li>
+          <li><a href="#modulos" class="hover:text-white transition-colors">Nómina electrónica</a></li>
+          <li><a href="#planes"  class="hover:text-white transition-colors">Planes y precios</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-bold text-white mb-4 text-sm">Empresa</h4>
-        <ul class="space-y-2.5 text-sm">
-          <li><a href="#nosotros"    class="hover:text-white transition-colors">Sobre Nosotros</a></li>
-          <li><a href="#portafolio"  class="hover:text-white transition-colors">Portafolio</a></li>
-          <li><a href="#testimonios" class="hover:text-white transition-colors">Testimonios</a></li>
-          <li><a href="#contacto"    class="hover:text-white transition-colors">Contacto</a></li>
+        <h4 class="text-white font-semibold mb-4">Empresa</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a href="#servicios" class="hover:text-white transition-colors">Desarrollo a la medida</a></li>
+          <li><a href="#clientes"  class="hover:text-white transition-colors">Clientes</a></li>
+          <li><a href="#contacto"  class="hover:text-white transition-colors">Contacto</a></li>
         </ul>
-      </div>
-
-      <div>
-        <h4 class="font-bold text-white mb-4 text-sm">Contacto</h4>
-        <ul class="space-y-3 text-sm">
-          <li class="flex items-center gap-2.5">
-            <i class="pi pi-envelope" style="color: var(--aura-blue-light)"></i>
-            <span>{{ email }}</span>
-          </li>
-          <li>
-            <a href="https://wa.me/573204116945?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios."
-               target="_blank" rel="noopener noreferrer"
-               class="flex items-center gap-2.5 hover:text-green-400 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5 text-green-400 flex-shrink-0">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-              +57 3204116945
-            </a>
-          </li>
-          <li class="flex items-start gap-2.5">
-            <i class="pi pi-map-marker mt-0.5" style="color: var(--aura-blue-light)"></i>
-            <span>Montelíbano, Córdoba<br />Colombia</span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="flex flex-col md:flex-row justify-between items-center gap-3 pt-7 text-xs text-gray-600">
-      <p>© 2025 Cloud Tecnological. Todos los derechos reservados.</p>
-      <div class="flex gap-5">
-        <a href="#" class="hover:text-gray-400 transition">Política de privacidad</a>
-        <a href="#" class="hover:text-gray-400 transition">Términos de uso</a>
       </div>
     </div>
 
+    <div class="flex flex-col sm:flex-row justify-between gap-3 pt-6 border-t border-white/10 text-xs">
+      <p>© 2026 Cloud Tecnological. Todos los derechos reservados.</p>
+      <p>Aura Nube es un producto de Cloud Tecnological.</p>
+    </div>
   </div>
 </footer>
