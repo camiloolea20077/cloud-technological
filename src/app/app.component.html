@@ -1,10 +1,9 @@
 <!-- ============================================================
      WHATSAPP FLOTANTE
      ============================================================ -->
-<a [href]="waLink('Hola, quiero conocer Aura Nube.')"
+<a [href]="waLink('Hola, quiero información sobre sus servicios.')"
    target="_blank" rel="noopener noreferrer"
-   class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full grid place-items-center text-white shadow-lg transition-transform hover:scale-105"
-   style="background: #1faa59"
+   class="wa-float"
    aria-label="Escríbenos por WhatsApp">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7" aria-hidden="true">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -22,20 +21,19 @@
       <span class="display font-bold text-[1.05rem]">Cloud Tecnological</span>
     </a>
 
-    <ul class="hidden md:flex items-center gap-8">
-      <li><a href="#aura-nube" class="nav-link">Aura Nube</a></li>
-      <li><a href="#modulos"   class="nav-link">Módulos</a></li>
-      <li><a href="#planes"    class="nav-link">Planes</a></li>
-      <li><a href="#servicios" class="nav-link">Desarrollo a la medida</a></li>
+    <ul class="hidden lg:flex items-center gap-7">
+      <li><a href="#servicios" class="nav-link">Servicios</a></li>
+      <li><a href="#ia"        class="nav-link">Inteligencia artificial</a></li>
+      <li><a href="#aura-nube" class="nav-link">Aura Nube <span class="nav-tag">ERP</span></a></li>
+      <li><a href="#proceso"   class="nav-link">Cómo trabajamos</a></li>
       <li><a href="#clientes"  class="nav-link">Clientes</a></li>
     </ul>
 
     <div class="flex items-center gap-2">
-      <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
-         class="btn btn-dark hidden sm:inline-flex !py-2 !px-4 text-sm">
-        Agendar demo
+      <a href="#contacto" class="btn btn-dark hidden sm:inline-flex !py-2 !px-4 text-sm">
+        Cotizar mi proyecto
       </a>
-      <button type="button" class="md:hidden w-10 h-10 grid place-items-center rounded-lg border border-[var(--line)]"
+      <button type="button" class="lg:hidden w-11 h-11 grid place-items-center rounded-lg border border-[var(--line)]"
               (click)="menuOpen.set(!menuOpen())"
               [attr.aria-expanded]="menuOpen()" aria-label="Abrir menú">
         <i class="pi" [class.pi-bars]="!menuOpen()" [class.pi-times]="menuOpen()"></i>
@@ -44,16 +42,15 @@
   </div>
 
   @if (menuOpen()) {
-    <div class="md:hidden border-t border-[var(--line)] bg-white">
+    <div class="lg:hidden border-t border-[var(--line)] bg-white">
       <ul class="container-x flex flex-col py-3" (click)="menuOpen.set(false)">
-        <li><a href="#aura-nube" class="block py-3 nav-link">Aura Nube</a></li>
-        <li><a href="#modulos"   class="block py-3 nav-link">Módulos</a></li>
-        <li><a href="#planes"    class="block py-3 nav-link">Planes</a></li>
-        <li><a href="#servicios" class="block py-3 nav-link">Desarrollo a la medida</a></li>
+        <li><a href="#servicios" class="block py-3 nav-link">Servicios</a></li>
+        <li><a href="#ia"        class="block py-3 nav-link">Inteligencia artificial</a></li>
+        <li><a href="#aura-nube" class="block py-3 nav-link">Aura Nube · ERP</a></li>
+        <li><a href="#proceso"   class="block py-3 nav-link">Cómo trabajamos</a></li>
         <li><a href="#clientes"  class="block py-3 nav-link">Clientes</a></li>
         <li class="pt-2">
-          <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
-             class="btn btn-dark w-full">Agendar demo</a>
+          <a href="#contacto" class="btn btn-dark w-full">Cotizar mi proyecto</a>
         </li>
       </ul>
     </div>
@@ -62,41 +59,245 @@
 
 
 <!-- ============================================================
-     HERO — AURA NUBE
+     HERO — LA EMPRESA
      ============================================================ -->
-<section id="aura-nube" class="pt-28 md:pt-36 pb-20 overflow-hidden">
-  <div class="container-x grid lg:grid-cols-[1fr_1.05fr] gap-14 lg:gap-16 items-center">
+<section class="pt-28 md:pt-36 pb-20 overflow-hidden">
+  <div class="container-x grid lg:grid-cols-[1.1fr_0.9fr] gap-14 lg:gap-16 items-center">
 
     <div class="flex flex-col gap-7 min-w-0">
-      <span class="eyebrow"><i class="pi pi-cloud"></i> Aura Nube · ERP en la nube</span>
+      <span class="eyebrow"><i class="pi pi-map-marker"></i> Empresa colombiana de software</span>
 
-      <h1 class="text-[2.6rem] sm:text-[3.4rem] lg:text-[4rem] font-extrabold leading-[1.02]">
-        Ventas, contabilidad y nómina en <span class="mark">un solo sistema</span>.
+      <h1 class="text-[2.5rem] sm:text-[3.2rem] lg:text-[3.75rem] font-extrabold leading-[1.03]">
+        Software e inteligencia artificial hechos <span class="mark">a la medida de tu empresa</span>.
       </h1>
 
       <p class="lead">
-        Aura Nube es el ERP de Cloud Tecnological para empresas colombianas. Vendes en el punto de venta,
-        el inventario se descuenta solo y la contabilidad queda registrada. Si solo necesitas
-        contabilidad o nómina, también lo puedes contratar por módulos.
+        Desarrollamos sistemas a la medida, automatizamos procesos con IA y creamos Aura Nube,
+        nuestro ERP en la nube. Un solo equipo te acompaña desde la idea hasta el soporte.
       </p>
 
       <div class="flex flex-wrap gap-3">
-        <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
+        <a [href]="waLink('Hola, quiero cotizar un proyecto.')" target="_blank" rel="noopener noreferrer"
            class="btn btn-primary">
-          Agendar una demo gratis <i class="pi pi-arrow-right text-xs"></i>
+          Cuéntanos tu proyecto <i class="pi pi-arrow-right text-xs"></i>
         </a>
-        <a href="#planes" class="btn btn-ghost">Ver planes y precios</a>
+        <a href="#servicios" class="btn btn-ghost">Ver qué hacemos</a>
       </div>
 
       <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--body)]">
-        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Facturación electrónica DIAN (opcional)</li>
-        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Nómina electrónica</li>
-        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Contabilidad NIIF</li>
+        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Primera asesoría sin costo</li>
+        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Propuesta con precio antes de empezar</li>
+        <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Soporte directo por WhatsApp</li>
       </ul>
     </div>
 
-    <!-- Mockup del producto -->
+    <!-- Ejemplo ilustrativo: asistente con IA conectado al inventario -->
     <div class="relative min-w-0">
+      <div class="app-window">
+        <div class="app-topbar">
+          <span class="logo-mark !w-6 !h-6 !rounded-md !bg-[var(--pine)]"><i class="pi pi-sparkles text-[0.6rem]"></i></span>
+          <span class="font-semibold text-white">Asistente de tu negocio</span>
+          <span class="ml-auto chip !bg-[rgba(255,255,255,0.08)] !text-[#c9d6d2]">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#3ddc97]"></span> 9:42 p. m.
+          </span>
+        </div>
+
+        <div class="chat">
+          <p class="bubble bubble-in">Buenas noches, ¿tienen cemento gris x 50 kg? Necesito 20 bultos.</p>
+          <p class="bubble bubble-out">
+            ¡Hola! Sí, tenemos 64 bultos disponibles a <strong>$32.500</strong> cada uno.
+            Los 20 quedan en <strong>$650.000</strong>. ¿Te los separo para recoger mañana?
+          </p>
+          <p class="bubble bubble-in">Sí, por favor.</p>
+
+          <div class="trace">
+            <p class="trace-head"><i class="pi pi-bolt"></i> Lo que hizo el sistema</p>
+            <ol>
+              <li><span>Consultó el inventario</span><span class="mono">64 disponibles</span></li>
+              <li><span>Creó el pedido</span><span class="mono">PD-0318</span></li>
+              <li><span>Reservó la mercancía</span><span class="mono">64 → 44</span></li>
+              <li><span>Avisó a bodega</span><span class="mono">enviado</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-card hidden sm:flex items-center gap-3 -bottom-5 -left-6">
+        <span class="w-9 h-9 rounded-lg grid place-items-center bg-[var(--pine-tint)] text-[var(--pine)]"><i class="pi pi-clock"></i></span>
+        <div>
+          <p class="font-semibold text-[var(--ink)]">Atendido fuera de horario</p>
+          <p class="text-[var(--muted)] text-[0.75rem]">Ejemplo de un asistente con IA</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     LAS TRES LÍNEAS
+     ============================================================ -->
+<div class="bg-[var(--ink)]">
+  <div class="container-x grid md:grid-cols-3">
+    <a href="#servicios" class="pillar">
+      <span class="mono pillar-num">01</span>
+      <span class="pillar-name">Desarrollo a la medida</span>
+      <span class="pillar-text">Web, apps móviles e integraciones para tu proceso.</span>
+    </a>
+    <a href="#ia" class="pillar">
+      <span class="mono pillar-num">02</span>
+      <span class="pillar-name">Inteligencia artificial</span>
+      <span class="pillar-text">Asistentes y automatización conectados a tus sistemas.</span>
+    </a>
+    <a href="#aura-nube" class="pillar">
+      <span class="mono pillar-num">03</span>
+      <span class="pillar-name">Aura Nube</span>
+      <span class="pillar-text">Nuestro ERP: ventas, inventario, contabilidad y nómina.</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     SERVICIOS
+     ============================================================ -->
+<section id="servicios" class="section">
+  <div class="container-x flex flex-col gap-12">
+
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+      <div class="flex flex-col gap-4 max-w-2xl">
+        <span class="eyebrow">Servicios</span>
+        <h2 class="section-title">Lo que podemos construir para tu empresa.</h2>
+      </div>
+      <p class="lead lg:max-w-[38ch]">
+        Si tu operación necesita algo que ningún software trae, lo hacemos. Cuéntanos el problema y te decimos cómo lo resolveríamos.
+      </p>
+    </div>
+
+    <div class="svc-list">
+      @for (s of services; track s.name; let i = $index) {
+        <article class="svc-row">
+          <span class="mono svc-num">{{ num(i) }}</span>
+          <div class="flex flex-col gap-2 min-w-0">
+            <h3 class="text-[1.35rem] font-bold flex items-center gap-3">
+              <i [class]="'pi ' + s.icon + ' text-[var(--pine)] text-base'"></i>{{ s.name }}
+            </h3>
+            <p class="text-[var(--body)] text-[0.98rem] max-w-[52ch]">{{ s.description }}</p>
+          </div>
+          <ul class="flex flex-wrap gap-1.5 content-start">
+            @for (e of s.examples; track e) { <li class="module-pill">{{ e }}</li> }
+          </ul>
+          <a [href]="waLink('Hola, quiero cotizar: ' + s.name + '.')" target="_blank" rel="noopener noreferrer"
+             class="svc-link" [attr.aria-label]="'Cotizar ' + s.name">
+            Cotizar <i class="pi pi-arrow-right text-xs"></i>
+          </a>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     INTELIGENCIA ARTIFICIAL
+     ============================================================ -->
+<section id="ia" class="section bg-[var(--ink)] text-white">
+  <div class="container-x grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16">
+
+    <div class="flex flex-col gap-5 lg:sticky lg:top-28 self-start min-w-0">
+      <span class="eyebrow !text-[var(--amber)]"><i class="pi pi-sparkles"></i> Inteligencia artificial</span>
+      <h2 class="section-title !text-white">IA que trabaja con los datos reales de tu negocio.</h2>
+      <p class="text-[#a9bab5] text-lg max-w-[48ch]">
+        No vendemos un chat genérico. Conectamos la IA a tu inventario, tus clientes y tus documentos
+        para que resuelva tareas concretas.
+      </p>
+
+      <div class="pilot">
+        <p class="mono pilot-label">Cómo empezamos</p>
+        <p>Un piloto pequeño sobre un proceso real. Medimos el resultado y, si funciona, lo ampliamos.</p>
+      </div>
+
+      <a [href]="waLink('Hola, quiero saber cómo aplicar inteligencia artificial en mi empresa.')" target="_blank" rel="noopener noreferrer"
+         class="btn btn-light w-fit">Evaluar mi caso <i class="pi pi-arrow-right text-xs"></i></a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-4 min-w-0">
+      @for (c of aiCases; track c.name) {
+        <article class="ai-card">
+          <span class="ai-icon"><i [class]="'pi ' + c.icon"></i></span>
+          <h3 class="text-lg font-bold !text-white">{{ c.name }}</h3>
+          <p class="text-[#a9bab5] text-[0.95rem] flex-1">{{ c.description }}</p>
+          <p class="mono ai-example">{{ c.example }}</p>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CÓMO TRABAJAMOS
+     ============================================================ -->
+<section id="proceso" class="section bg-[var(--paper)]">
+  <div class="container-x flex flex-col gap-12">
+    <div class="flex flex-col gap-4 max-w-2xl">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2 class="section-title">De la primera conversación al sistema funcionando.</h2>
+    </div>
+
+    <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      @for (st of steps; track st.name; let i = $index) {
+        <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
+          <span class="mono text-sm text-[var(--pine)]">Paso {{ i + 1 }}</span>
+          <h3 class="text-lg font-bold">{{ st.name }}</h3>
+          <p class="text-[var(--body)] text-[0.95rem]">{{ st.description }}</p>
+        </li>
+      }
+    </ol>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     AURA NUBE — NUESTRO PRODUCTO
+     ============================================================ -->
+<section id="aura-nube" class="section">
+  <div class="container-x flex flex-col gap-20">
+
+    <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-16 items-center">
+      <div class="flex flex-col gap-6 min-w-0">
+        <span class="eyebrow"><i class="pi pi-cloud"></i> Nuestro producto · ERP en la nube</span>
+        <h2 class="section-title">Aura Nube: ventas, contabilidad y nómina en un solo sistema.</h2>
+        <p class="lead">
+          El ERP que construimos para empresas colombianas. Vendes en el punto de venta,
+          el inventario se descuenta solo y la contabilidad queda registrada sin digitar dos veces.
+        </p>
+
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--body)]">
+          <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Facturación electrónica DIAN (opcional)</li>
+          <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Nómina electrónica</li>
+          <li class="flex items-center gap-2"><i class="pi pi-check-circle text-[var(--pine)]"></i> Contabilidad NIIF</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-3">
+          <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
+             class="btn btn-primary">
+            Agendar una demo gratis <i class="pi pi-arrow-right text-xs"></i>
+          </a>
+          <a href="#planes" class="btn btn-ghost">Ver planes y precios</a>
+        </div>
+
+        <p class="text-sm text-[var(--body)] flex flex-wrap items-center gap-2">
+          <span class="badge-amber">Nuevo nombre</span>
+          Aura POS ahora es Aura Nube. Si ya eres cliente, tus datos siguen intactos.
+        </p>
+      </div>
+
+      <!-- Mockup del producto -->
+      <div class="relative min-w-0">
       <div class="app-window">
         <div class="app-topbar">
           <span class="logo-mark !w-6 !h-6 !rounded-md !bg-[var(--pine)]"><i class="pi pi-cloud text-[0.6rem]"></i></span>
@@ -163,57 +364,17 @@
           <p class="text-[var(--muted)] text-[0.75rem]">12 empleados · transmitida a la DIAN</p>
         </div>
       </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ============================================================
-     CAMBIO DE NOMBRE
-     ============================================================ -->
-<div class="bg-[var(--ink)] text-[#dbe5e2]">
-  <div class="container-x py-5 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-sm">
-    <span class="badge-amber w-fit">Nuevo nombre</span>
-    <p><strong class="text-white">Aura POS ahora es Aura Nube.</strong> Mismo equipo y mismo soporte, ahora con contabilidad, nómina y más módulos. Si ya eres cliente, tus datos siguen intactos.</p>
-  </div>
-</div>
-
-
-<!-- ============================================================
-     MÓDULOS
-     ============================================================ -->
-<section id="modulos" class="section bg-[var(--paper)]">
-  <div class="container-x grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16">
-
-    <div class="flex flex-col gap-5 lg:sticky lg:top-28 self-start min-w-0">
-      <span class="eyebrow">Módulos de Aura Nube</span>
-      <h2 class="section-title">Úsalo completo o solo la parte que necesitas.</h2>
-      <p class="lead">
-        Cada módulo funciona por separado. Cuando los unes, la información fluye sola:
-        una venta descuenta inventario y genera su comprobante contable sin digitar dos veces.
-      </p>
-      <div class="flex flex-col gap-3 pt-2">
-        <a href="#solo-modulos" class="side-offer">
-          <span class="module-icon !w-10 !h-10 shrink-0"><i class="pi pi-book"></i></span>
-          <span class="flex flex-col gap-1 min-w-0">
-            <span class="font-semibold text-[var(--ink)]">¿Eres contador? Aura Contable</span>
-            <span class="text-sm text-[var(--body)]">Lleva la contabilidad de todos tus clientes, aunque ellos facturen con otro sistema.</span>
-          </span>
-          <i class="pi pi-arrow-right text-xs text-[var(--pine)] ml-auto self-center"></i>
-        </a>
-        <a href="#solo-modulos" class="side-offer">
-          <span class="module-icon !w-10 !h-10 shrink-0"><i class="pi pi-users"></i></span>
-          <span class="flex flex-col gap-1 min-w-0">
-            <span class="font-semibold text-[var(--ink)]">¿Solo necesitas nómina? Aura Nómina</span>
-            <span class="text-sm text-[var(--body)]">Liquida y transmite la nómina electrónica sin contratar el ERP completo.</span>
-          </span>
-          <i class="pi pi-arrow-right text-xs text-[var(--pine)] ml-auto self-center"></i>
-        </a>
       </div>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-px bg-[var(--line)] border border-[var(--line)] rounded-[var(--radius)] overflow-hidden min-w-0">
+    <!-- Módulos -->
+    <div id="modulos" class="flex flex-col gap-8">
+      <div class="flex flex-col gap-2 max-w-2xl">
+        <h3 class="text-2xl font-bold">Úsalo completo o solo la parte que necesitas.</h3>
+        <p class="text-[var(--body)]">Cada módulo funciona por separado. Cuando los unes, la información fluye sola entre ellos.</p>
+      </div>
+
+    <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-px bg-[var(--line)] border border-[var(--line)] rounded-[var(--radius)] overflow-hidden min-w-0">
       <article class="module">
         <span class="module-icon"><i class="pi pi-shopping-cart"></i></span>
         <h3 class="text-xl font-bold">Punto de venta</h3>
@@ -259,43 +420,26 @@
       </article>
     </div>
 
-  </div>
-</section>
-
-
-<!-- ============================================================
-     CÓMO FLUYE LA INFORMACIÓN
-     ============================================================ -->
-<section class="section">
-  <div class="container-x flex flex-col gap-12">
-    <div class="flex flex-col gap-4 max-w-2xl">
-      <span class="eyebrow">Por qué un ERP</span>
-      <h2 class="section-title">Una venta, y todo queda al día.</h2>
-      <p class="lead">Esto pasa en Aura Nube cada vez que tu cajero registra una venta.</p>
+      <div class="grid md:grid-cols-2 gap-3">
+        <a href="#solo-modulos" class="side-offer">
+          <span class="module-icon !w-10 !h-10 shrink-0"><i class="pi pi-book"></i></span>
+          <span class="flex flex-col gap-1 min-w-0">
+            <span class="font-semibold text-[var(--ink)]">¿Eres contador? Aura Contable</span>
+            <span class="text-sm text-[var(--body)]">Lleva la contabilidad de todos tus clientes, aunque ellos facturen con otro sistema.</span>
+          </span>
+          <i class="pi pi-arrow-right text-xs text-[var(--pine)] ml-auto self-center"></i>
+        </a>
+        <a href="#solo-modulos" class="side-offer">
+          <span class="module-icon !w-10 !h-10 shrink-0"><i class="pi pi-users"></i></span>
+          <span class="flex flex-col gap-1 min-w-0">
+            <span class="font-semibold text-[var(--ink)]">¿Solo necesitas nómina? Aura Nómina</span>
+            <span class="text-sm text-[var(--body)]">Liquida y transmite la nómina electrónica sin contratar el ERP completo.</span>
+          </span>
+          <i class="pi pi-arrow-right text-xs text-[var(--pine)] ml-auto self-center"></i>
+        </a>
+      </div>
     </div>
 
-    <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
-        <span class="mono text-sm text-[var(--pine)]">Paso 1</span>
-        <h3 class="text-lg font-bold">Se registra la venta</h3>
-        <p class="text-[var(--body)] text-[0.95rem]">El POS emite la venta y, si tienes facturación electrónica activa, la valida con la DIAN en segundos.</p>
-      </li>
-      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
-        <span class="mono text-sm text-[var(--pine)]">Paso 2</span>
-        <h3 class="text-lg font-bold">Baja el inventario</h3>
-        <p class="text-[var(--body)] text-[0.95rem]">Cada producto vendido se descuenta de la bodega con su costo real.</p>
-      </li>
-      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
-        <span class="mono text-sm text-[var(--pine)]">Paso 3</span>
-        <h3 class="text-lg font-bold">Se contabiliza</h3>
-        <p class="text-[var(--body)] text-[0.95rem]">El comprobante contable se crea solo: caja, ingreso, IVA y costo de venta.</p>
-      </li>
-      <li class="flex flex-col gap-3 border-t-2 border-[var(--ink)] pt-5">
-        <span class="mono text-sm text-[var(--pine)]">Paso 4</span>
-        <h3 class="text-lg font-bold">Ves tus números</h3>
-        <p class="text-[var(--body)] text-[0.95rem]">Ventas, utilidad y flujo de caja actualizados, desde cualquier dispositivo.</p>
-      </li>
-    </ol>
   </div>
 </section>
 
@@ -448,65 +592,13 @@
 
 
 <!-- ============================================================
-     DESARROLLO A LA MEDIDA
-     ============================================================ -->
-<section id="servicios" class="section">
-  <div class="container-x grid lg:grid-cols-[0.9fr_1.1fr] gap-12 lg:gap-16">
-
-    <div class="flex flex-col gap-5 min-w-0">
-      <span class="eyebrow">Desarrollo a la medida</span>
-      <h2 class="section-title">¿Tu operación necesita algo que ningún software trae?</h2>
-      <p class="lead">
-        El mismo equipo que construye Aura Nube desarrolla software para empresas con procesos propios:
-        integraciones con tu ERP, aplicaciones móviles para tu equipo en campo o una plataforma completa.
-      </p>
-      <a [href]="waLink('Hola, quiero cotizar un desarrollo a la medida.')" target="_blank" rel="noopener noreferrer"
-         class="btn btn-dark w-fit">Cuéntanos tu proyecto <i class="pi pi-arrow-right text-xs"></i></a>
-    </div>
-
-    <div class="min-w-0">
-      <div class="service">
-        <i class="pi pi-code"></i>
-        <div>
-          <h3 class="text-lg font-bold">Aplicaciones web</h3>
-          <p class="text-[var(--body)] text-[0.95rem]">Portales, plataformas internas y sistemas de gestión hechos para tu proceso, con Angular y React.</p>
-        </div>
-      </div>
-      <div class="service">
-        <i class="pi pi-mobile"></i>
-        <div>
-          <h3 class="text-lg font-bold">Apps móviles</h3>
-          <p class="text-[var(--body)] text-[0.95rem]">Apps para iOS y Android: toma de pedidos, rutas de venta, inspecciones en campo.</p>
-        </div>
-      </div>
-      <div class="service">
-        <i class="pi pi-sitemap"></i>
-        <div>
-          <h3 class="text-lg font-bold">Integraciones y APIs</h3>
-          <p class="text-[var(--body)] text-[0.95rem]">Conectamos Aura Nube o tu sistema actual con tiendas en línea, bancos, básculas y otros proveedores.</p>
-        </div>
-      </div>
-      <div class="service border-b border-[var(--line)]">
-        <i class="pi pi-server"></i>
-        <div>
-          <h3 class="text-lg font-bold">Nube e infraestructura</h3>
-          <p class="text-[var(--body)] text-[0.95rem]">Migración a la nube, copias de seguridad automáticas y monitoreo de tus servidores.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ============================================================
      CLIENTES
      ============================================================ -->
-<section id="clientes" class="section bg-[var(--paper)]">
+<section id="clientes" class="section">
   <div class="container-x flex flex-col gap-12">
     <div class="flex flex-col gap-4 max-w-2xl">
       <span class="eyebrow">Clientes</span>
-      <h2 class="section-title">Negocios de la región que ya trabajan con Aura.</h2>
+      <h2 class="section-title">Negocios de la región que ya trabajan con nosotros.</h2>
     </div>
 
     <div class="grid md:grid-cols-3 gap-5">
@@ -547,38 +639,65 @@
 <!-- ============================================================
      PREGUNTAS FRECUENTES
      ============================================================ -->
-<section class="section">
+<section class="section bg-[var(--paper)]">
   <div class="container-x grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-16">
     <div class="flex flex-col gap-4">
       <span class="eyebrow">Preguntas frecuentes</span>
       <h2 class="section-title">Lo que más nos preguntan.</h2>
     </div>
 
-    <div class="border-b border-[var(--line)]">
-      <details class="faq">
-        <summary>¿Puedo usar solo la contabilidad, sin el punto de venta? <i class="pi pi-plus"></i></summary>
-        <p>Sí. Aura Contable funciona por separado: registras compras, ventas y gastos, o los importas desde otro sistema de facturación. Es ideal para contadores que llevan varias empresas.</p>
-      </details>
-      <details class="faq">
-        <summary>¿Aura Nube cumple con la DIAN? <i class="pi pi-plus"></i></summary>
-        <p>Sí. Emite factura electrónica, documento POS electrónico, notas crédito y nómina electrónica, y te acompañamos en la habilitación ante la DIAN.</p>
-      </details>
-      <details class="faq">
-        <summary>¿La facturación electrónica tiene costo adicional? <i class="pi pi-plus"></i></summary>
-        <p>Sí. La facturación electrónica se emite a través de un proveedor tecnológico autorizado por la DIAN, por eso se cobra aparte del plan. Pagas un paquete según los documentos que emites al mes, desde {{ cop(einvoicePacks[0].monthly) }}. Si tu negocio no está obligado a facturar electrónicamente, no la activas y no pagas nada.</p>
-      </details>
-      <details class="faq">
-        <summary>Ya uso Aura POS. ¿Qué cambia para mí? <i class="pi pi-plus"></i></summary>
-        <p>Solo el nombre. Tu información, usuarios y precio actual se mantienen. Si quieres agregar contabilidad o nómina, lo activamos sobre tu misma cuenta.</p>
-      </details>
-      <details class="faq">
-        <summary>¿Tengo que instalar algo? <i class="pi pi-plus"></i></summary>
-        <p>No. Aura Nube funciona desde el navegador en computador, tablet o celular. Tus datos quedan en la nube con copias de seguridad diarias.</p>
-      </details>
-      <details class="faq">
-        <summary>¿Cuánto tarda la implementación? <i class="pi pi-plus"></i></summary>
-        <p>Un negocio con punto de venta queda vendiendo en uno o dos días. Para contabilidad y nómina cargamos saldos iniciales y empleados contigo, normalmente en una semana.</p>
-      </details>
+    <div class="flex flex-col gap-10 min-w-0">
+      <div>
+        <h3 class="faq-group">Servicios e inteligencia artificial</h3>
+        <div class="border-b border-[var(--line)]">
+          <details class="faq">
+            <summary>¿Cuánto cuesta un desarrollo a la medida? <i class="pi pi-plus"></i></summary>
+            <p>Depende del alcance. Por eso la primera conversación no tiene costo: entendemos lo que necesitas y te enviamos una propuesta con alcance, tiempos y precio antes de empezar.</p>
+          </details>
+          <details class="faq">
+            <summary>¿Mi empresa es muy pequeña para usar inteligencia artificial? <i class="pi pi-plus"></i></summary>
+            <p>No. Los casos que más resultado dan son sencillos: responder a clientes por WhatsApp, leer facturas o enviar recordatorios. Empezamos con un piloto pequeño sobre un proceso real.</p>
+          </details>
+          <details class="faq">
+            <summary>¿Pueden conectar la IA o el desarrollo con el sistema que ya uso? <i class="pi pi-plus"></i></summary>
+            <p>En la mayoría de los casos sí. Revisamos si tu sistema actual permite integrarse y te decimos qué se puede hacer antes de cotizar.</p>
+          </details>
+          <details class="faq">
+            <summary>¿Qué pasa después de la entrega? <i class="pi pi-plus"></i></summary>
+            <p>Capacitamos a tu equipo y seguimos disponibles por WhatsApp para soporte, ajustes y nuevas funciones.</p>
+          </details>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="faq-group">Aura Nube</h3>
+        <div class="border-b border-[var(--line)]">
+          <details class="faq">
+            <summary>¿Puedo usar solo la contabilidad, sin el punto de venta? <i class="pi pi-plus"></i></summary>
+            <p>Sí. Aura Contable funciona por separado: registras compras, ventas y gastos, o los importas desde otro sistema de facturación. Es ideal para contadores que llevan varias empresas.</p>
+          </details>
+          <details class="faq">
+            <summary>¿Aura Nube cumple con la DIAN? <i class="pi pi-plus"></i></summary>
+            <p>Sí. Emite factura electrónica, documento POS electrónico, notas crédito y nómina electrónica, y te acompañamos en la habilitación ante la DIAN.</p>
+          </details>
+          <details class="faq">
+            <summary>¿La facturación electrónica tiene costo adicional? <i class="pi pi-plus"></i></summary>
+            <p>Sí. La facturación electrónica se emite a través de un proveedor tecnológico autorizado por la DIAN, por eso se cobra aparte del plan. Pagas un paquete según los documentos que emites al mes, desde {{ cop(einvoicePacks[0].monthly) }}. Si tu negocio no está obligado a facturar electrónicamente, no la activas y no pagas nada.</p>
+          </details>
+          <details class="faq">
+            <summary>Ya uso Aura POS. ¿Qué cambia para mí? <i class="pi pi-plus"></i></summary>
+            <p>Solo el nombre. Tu información, usuarios y precio actual se mantienen. Si quieres agregar contabilidad o nómina, lo activamos sobre tu misma cuenta.</p>
+          </details>
+          <details class="faq">
+            <summary>¿Tengo que instalar algo? <i class="pi pi-plus"></i></summary>
+            <p>No. Aura Nube funciona desde el navegador en computador, tablet o celular. Tus datos quedan en la nube con copias de seguridad diarias.</p>
+          </details>
+          <details class="faq">
+            <summary>¿Cuánto tarda la implementación? <i class="pi pi-plus"></i></summary>
+            <p>Un negocio con punto de venta queda vendiendo en uno o dos días. Para contabilidad y nómina cargamos saldos iniciales y empleados contigo, normalmente en una semana.</p>
+          </details>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -588,26 +707,50 @@
      CONTACTO
      ============================================================ -->
 <section id="contacto" class="bg-[var(--ink)] text-white">
-  <div class="container-x py-20 md:py-24 grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-end">
+  <div class="container-x py-20 md:py-24 grid lg:grid-cols-[1fr_1fr] gap-12 lg:gap-16 items-start">
+
     <div class="flex flex-col gap-5">
-      <h2 class="section-title !text-white">Te mostramos Aura Nube con los datos de tu negocio.</h2>
-      <p class="text-[#a9bab5] text-lg max-w-[55ch]">Agenda una demo de 30 minutos. Te respondemos el mismo día hábil.</p>
-      <div class="flex flex-wrap gap-3 pt-2">
-        <a [href]="waLink('Hola, quiero agendar una demo de Aura Nube.')" target="_blank" rel="noopener noreferrer"
-           class="btn btn-wa">
-          <i class="pi pi-whatsapp"></i> Escribir por WhatsApp
-        </a>
-        <a href="mailto:{{ email }}" class="btn btn-light">
-          <i class="pi pi-envelope"></i> Enviar correo
-        </a>
-      </div>
+      <span class="eyebrow !text-[var(--amber)]">Contacto</span>
+      <h2 class="section-title !text-white">Cuéntanos qué quieres resolver.</h2>
+      <p class="text-[#a9bab5] text-lg max-w-[48ch]">
+        Te respondemos el mismo día hábil. La primera asesoría no tiene costo ni compromiso.
+      </p>
+
+      <ul class="flex flex-col gap-4 text-[#dbe5e2] text-sm pt-4">
+        <li class="flex items-center gap-3"><i class="pi pi-phone text-[var(--amber)]"></i> <span class="mono">+57 320 411 6945</span></li>
+        <li class="flex items-center gap-3"><i class="pi pi-envelope text-[var(--amber)]"></i>
+          <a href="mailto:{{ email }}" class="break-all hover:text-white underline-offset-4 hover:underline">{{ email }}</a></li>
+        <li class="flex items-center gap-3"><i class="pi pi-map-marker text-[var(--amber)]"></i> Montelíbano, Córdoba · Colombia</li>
+      </ul>
     </div>
 
-    <ul class="flex flex-col gap-4 text-[#dbe5e2] text-sm lg:border-l lg:border-white/10 lg:pl-10">
-      <li class="flex items-center gap-3"><i class="pi pi-phone text-[var(--amber)]"></i> <span class="mono">+57 320 411 6945</span></li>
-      <li class="flex items-center gap-3"><i class="pi pi-envelope text-[var(--amber)]"></i> <span class="break-all">{{ email }}</span></li>
-      <li class="flex items-center gap-3"><i class="pi pi-map-marker text-[var(--amber)]"></i> Montelíbano, Córdoba · Colombia</li>
-    </ul>
+    <!-- Arma tu mensaje: se envía por WhatsApp -->
+    <div class="brief">
+      <fieldset class="flex flex-col gap-3">
+        <legend class="brief-label mb-3">1 · ¿Qué te interesa?</legend>
+        <div class="flex flex-wrap gap-2">
+          @for (it of interests; track it) {
+            <button type="button" class="pick" [class.pick-on]="selected().includes(it)"
+                    [attr.aria-pressed]="selected().includes(it)" (click)="toggleInterest(it)">
+              <i class="pi" [class.pi-plus]="!selected().includes(it)" [class.pi-check]="selected().includes(it)"></i>
+              {{ it }}
+            </button>
+          }
+        </div>
+      </fieldset>
+
+      <label class="flex flex-col gap-3">
+        <span class="brief-label">2 · Tu empresa o negocio <span class="normal-case tracking-normal text-[#7b8b91]">(opcional)</span></span>
+        <input type="text" class="brief-input" placeholder="Ej.: Ferretería El Progreso" autocomplete="organization"
+               [value]="company()" (input)="company.set($any($event.target).value)">
+      </label>
+
+      <a [href]="contactLink()" target="_blank" rel="noopener noreferrer" class="btn btn-wa w-full">
+        <i class="pi pi-whatsapp"></i> Enviar por WhatsApp
+      </a>
+      <p class="text-xs text-[#8fa39d] text-center">Se abre WhatsApp con tu mensaje listo. Tú decides si lo envías.</p>
+    </div>
+
   </div>
 </section>
 
@@ -617,13 +760,23 @@
      ============================================================ -->
 <footer class="bg-[#0a151b] text-[#8fa39d] text-sm">
   <div class="container-x pt-14 pb-8 flex flex-col gap-10">
-    <div class="grid sm:grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr] gap-10">
+    <div class="grid sm:grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10">
       <div class="flex flex-col gap-4 max-w-sm">
         <span class="flex items-center gap-2.5">
           <span class="logo-mark !bg-[var(--pine)]"><i class="pi pi-cloud text-sm"></i></span>
           <span class="display font-bold text-white">Cloud Tecnological</span>
         </span>
-        <p>Empresa colombiana de software. Creamos Aura Nube y desarrollamos soluciones a la medida desde 2019.</p>
+        <p>Empresa colombiana de software. Desarrollo a la medida, inteligencia artificial y Aura Nube, nuestro ERP en la nube. Desde 2019.</p>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-4">Servicios</h4>
+        <ul class="flex flex-col gap-2.5">
+          <li><a href="#servicios" class="hover:text-white transition-colors">Software a la medida</a></li>
+          <li><a href="#ia"        class="hover:text-white transition-colors">Inteligencia artificial</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Apps móviles</a></li>
+          <li><a href="#servicios" class="hover:text-white transition-colors">Integraciones y nube</a></li>
+        </ul>
       </div>
 
       <div>
@@ -639,9 +792,9 @@
       <div>
         <h4 class="text-white font-semibold mb-4">Empresa</h4>
         <ul class="flex flex-col gap-2.5">
-          <li><a href="#servicios" class="hover:text-white transition-colors">Desarrollo a la medida</a></li>
-          <li><a href="#clientes"  class="hover:text-white transition-colors">Clientes</a></li>
-          <li><a href="#contacto"  class="hover:text-white transition-colors">Contacto</a></li>
+          <li><a href="#proceso"  class="hover:text-white transition-colors">Cómo trabajamos</a></li>
+          <li><a href="#clientes" class="hover:text-white transition-colors">Clientes</a></li>
+          <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
         </ul>
       </div>
     </div>

@@ -457,3 +457,321 @@ h1, h2, h3 { color: var(--ink); }
     .module-card { padding: 24px 20px; }
   }
 }
+
+/* =============================================
+   WHATSAPP FLOTANTE
+   ============================================= */
+.wa-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #1faa59;
+  color: #fff;
+  box-shadow: 0 0 0 1px rgba(15, 29, 36, 0.06), 0 8px 24px rgba(15, 29, 36, 0.22);
+  transition: transform 0.18s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.18s;
+
+  &:hover { transform: scale(1.05); background: #178a48; }
+  &:active { transform: scale(0.97); }
+}
+
+.nav-tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 2px 5px;
+  margin-left: 4px;
+  border-radius: 4px;
+  background: var(--pine-tint);
+  color: var(--pine-strong);
+  vertical-align: 1px;
+}
+
+/* =============================================
+   HERO: ASISTENTE (ejemplo ilustrativo)
+   El "rastro" de lo que hizo el sistema es la firma visual:
+   cada conversación termina en un registro, como un comprobante.
+   ============================================= */
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 16px 20px;
+  background: var(--paper);
+  font-size: 0.86rem;
+  line-height: 1.5;
+
+  @media (min-width: 640px) { padding: 22px 22px 64px; }
+}
+
+.bubble {
+  max-width: 86%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  color: var(--ink);
+
+  strong { font-weight: 600; font-variant-numeric: tabular-nums; }
+}
+
+.bubble-in {
+  align-self: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-bottom-left-radius: 4px;
+}
+
+.bubble-out {
+  align-self: flex-end;
+  background: var(--pine-tint);
+  border-bottom-right-radius: 4px;
+}
+
+.trace {
+  margin-top: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+
+  .trace-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 14px;
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--pine-strong);
+    border-bottom: 1px solid var(--line);
+
+    i { font-size: 0.7rem; }
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    color: var(--body);
+    border-bottom: 1px dashed var(--line);
+
+    &:last-child { border-bottom: none; }
+    .mono { color: var(--ink); font-size: 0.74rem; white-space: nowrap; }
+  }
+}
+
+/* =============================================
+   LAS TRES LÍNEAS
+   ============================================= */
+.pillar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 14px;
+  row-gap: 2px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  &:first-child { border-top: none; }
+
+  @media (min-width: 768px) {
+    padding: 26px 28px;
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:first-child { border-left: none; padding-left: 0; }
+  }
+}
+
+.pillar-num { color: var(--amber); font-size: 0.75rem; grid-row: span 2; padding-top: 4px; }
+.pillar-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: -0.01em;
+  text-decoration: underline transparent;
+  text-underline-offset: 5px;
+  transition: text-decoration-color 0.2s;
+}
+.pillar:hover .pillar-name { text-decoration-color: var(--amber); }
+.pillar-text { color: #a9bab5; font-size: 0.88rem; line-height: 1.45; }
+
+/* =============================================
+   SERVICIOS: lista tipo libro, una fila por servicio
+   ============================================= */
+.svc-list { border-bottom: 1px solid var(--line); }
+
+.svc-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding-block: 28px;
+  border-top: 1px solid var(--line);
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 56px minmax(0, 1.25fr) minmax(0, 0.9fr) auto;
+    gap: 28px;
+    align-items: start;
+    padding-block: 32px;
+  }
+}
+
+.svc-num { color: var(--muted); font-size: 0.8rem; padding-top: 7px; }
+
+.svc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  min-height: 44px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--pine);
+  transition: color 0.2s;
+
+  i { transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1); }
+  &:hover { color: var(--pine-strong); }
+  &:hover i { transform: translateX(3px); }
+}
+
+/* =============================================
+   INTELIGENCIA ARTIFICIAL (sección oscura)
+   ============================================= */
+.ai-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+  min-width: 0;
+}
+
+.ai-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--amber);
+}
+
+.ai-example {
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: #dbe5e2;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.14);
+}
+
+.pilot {
+  padding: 16px 18px;
+  border-left: 2px solid var(--amber);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0 10px 10px 0;
+  color: #dbe5e2;
+  font-size: 0.95rem;
+  max-width: 48ch;
+}
+
+.pilot-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--amber);
+  margin-bottom: 4px;
+}
+
+/* =============================================
+   FAQ: grupos
+   ============================================= */
+.faq-group {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  padding-bottom: 12px;
+}
+
+/* =============================================
+   CONTACTO: arma tu mensaje
+   ============================================= */
+.brief {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+  @media (min-width: 640px) { padding: 32px; }
+}
+
+.brief-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #dbe5e2;
+}
+
+.pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #dbe5e2;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+  cursor: pointer;
+  transition: background-color 0.16s, color 0.16s, box-shadow 0.16s, transform 0.16s;
+
+  i { font-size: 0.7rem; color: #8fa39d; }
+  &:hover { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4); }
+  &:active { transform: scale(0.97); }
+  &:focus-visible { outline-color: var(--amber); }
+}
+
+.pick-on {
+  background: var(--amber);
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: none;
+
+  i { color: var(--ink); }
+  &:hover { box-shadow: none; }
+}
+
+.brief-input {
+  height: 48px;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 1rem;
+  transition: box-shadow 0.16s;
+
+  &::placeholder { color: #7b8b91; }
+  &:hover { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3); }
+  &:focus { outline: none; box-shadow: inset 0 0 0 2px var(--amber); }
+}
